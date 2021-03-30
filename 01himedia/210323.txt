@@ -1,0 +1,34 @@
+float:right; float:left;  를 사용시 width 를 지정하지않아도 됨
+
+calc(100% / 6); 연산자 끼리는  띄어주기
+
+li 에 float:left 는 clearfix 사용
+
+overflow:hidden; 부모 보다 넘쳤을때 잘라줌
+
+margin:0 auto; 센터 배치
+
+lorem 탭
+lorem2 탭 ->Lorem ipsum. 
+lorem4 탭 ->Lorem ipsum dolor sit.
+
+컨텐츠와 컨텐츠를 띄울떄 위에 컨텐츠에 margin-bottom: 넣기
+
+!important; 스타일 시트에서 최우선 사용
+
+onclick="return false" 자바언어
+true 참 false 거짓 의 false 이므로 onclick="return false" 은 onclick실행 안함
+
+
+ <a href="#header"> ->문서 내 # 아이디 값으로 이동 예시 해더
+  <a href="#top">->문서 내 # 아이디 값으로 이동 예시 top
+
+.contWrap1st img{ display: block;}  블럭단위 요소로 변경해서
+.contWrap1st .body {
+                    padding:10px 20px 20px 20px; 
+                    border:1px solid #ccc;
+                    border-top:0 none; 
+                    } 와 붙게만든뒤       border-top:0 none; 이걸 넣어서 위에 줄을 없애줌
+
+padding:10px 20px 10px 20px; 
+시계 방향 12시 3시 6시   9시
