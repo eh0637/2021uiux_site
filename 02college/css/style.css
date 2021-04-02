@@ -6,6 +6,7 @@
 .pr20 { padding-right:20px; !important;}
 .pd {padding: 30px 20px 30px 20px; !important;}
 
+
 /*contents*/
 #contents{
     height: 1300px;
@@ -15,6 +16,7 @@ background-image: url(../images/bg_dot.gif),url(../images/main_bg.jpg);
     background-size: auto,cover;
     padding: 100px 0;  
         }
+
 #contents .titleWrap {
     width: 1200px; height: 145px; margin: 0 auto;
 margin-bottom: 50px;
@@ -35,7 +37,7 @@ margin-bottom: 50px;
     width: 1200px; margin: 0 auto; background: #fff;
 }
 #contents .container>ul>li { float: left; width: 25%; height: 225px; }
-#contents .container>ul>li:nth-child(2n){background: pink;}
+/*#contents .container>ul>li:nth-child(2n){background: pink;}*/
 #contents .container>ul>li:nth-child(1){ width:75%; height: 450px; overflow:hidden; position:relative;    }
 .bx-wrapper {
     -moz-box-shadow: none;
@@ -161,7 +163,7 @@ span {float: right;}
         .menu1st {float:right;  }
         .menu1st ul{float:left; line-height:82px;  }
         .menu1st li {float:left; line-height:82px; margin-left:30px;   }
-        .menu1st li:last-child{margin-left:0; }
+/*        .menu1st li:last-child{margin-left:0; }*/
         .menu1st li a{ font-weight: normal; }        
         .menu1st li .fa-bars {background-color: #eee; padding:14px; }
         .menu1st li .fa-user {background-color:#00163b; padding:14px; color:#fff;  }
