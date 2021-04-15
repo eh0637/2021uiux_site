@@ -353,7 +353,7 @@ pr15 { padding-right:15px !important; }
 
         position: absolute; left: -100px; bottom: -100px;
         animation-name:air;
-        animation-duration: 2s;
+        animation-duration: 4s;
         animation-fill-mode: forwards;
 
       }
@@ -367,8 +367,8 @@ pr15 { padding-right:15px !important; }
 
         position: absolute; right: -500px; top:-500px;
         animation-name:air01;
-        animation-duration: 2s;
-        animation-delay: 2s;
+        animation-duration: 4s;
+        animation-delay: 4s;
         animation-fill-mode: forwards;
 
       }
