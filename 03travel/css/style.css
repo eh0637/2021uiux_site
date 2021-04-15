@@ -355,11 +355,12 @@ pr15 { padding-right:15px !important; }
         animation-name:air;
         animation-duration: 4s;
         animation-fill-mode: forwards;
+        transform:scale(1.1);
 
       }
 
 @keyframes air {
-        to{ left: 100%;bottom: 100%;}
+        to{ left: 100%;bottom: 100%; transform:scale(0.3);}
       }
 
 
@@ -370,11 +371,12 @@ pr15 { padding-right:15px !important; }
         animation-duration: 4s;
         animation-delay: 4s;
         animation-fill-mode: forwards;
+        transform:scale(0.3);
 
       }
 
 @keyframes air01 {
-        to{ right:100%;top: 100%;}
+        to{ right:100%;top: 100%; transform:scale(1.1);}
       }
 
 
