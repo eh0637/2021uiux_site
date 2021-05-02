@@ -7,11 +7,13 @@
   <title>Document</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
   <script src="js/jquery-3.1.1.min.js"></script>
   <script src="js/jquery.bxslider.js"></script>
   <script src="js/jquery.colorbox-min.js"></script>
+  <script src="js/script.js"></script>
   <script>
     $(document).ready(function(){
       var mySlider = $('.slider').bxSlider({
@@ -26,11 +28,6 @@
       $('.prevBtn').click(function(){
         mySlider.goToPrevSlide();
         });
-      $('.modSlider').bxSlider({
-        auto:true,
-        controls:false,
-        pager:false
-      });
 
       $(".toggleMenu").click(function(){
         const toggle = $(".toggleMenu").attr("class");
@@ -108,8 +105,22 @@
           <img src="images/prev.png" alt="">
         </div>
     </div>
-
   </header>
+   <div class="content">
+   <ul class="contList">
+     <li>1</li>
+     <li>2</li>
+     <li>3</li>
+     <li>4</li>
+     <li>5</li>
+     <li>6</li>
+     <li>7</li>
+     <li>8</li>
+     <li>9</li>
+     <li>10</li>
+     <li>11</li>
+   </ul>
+ </div>
 
 
 
