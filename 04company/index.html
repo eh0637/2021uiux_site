@@ -29,6 +29,7 @@
         mySlider.goToPrevSlide();
         });
 
+
       $(".toggleMenu").click(function(){
         const toggle = $(".toggleMenu").attr("class");
 
@@ -47,6 +48,13 @@
       $(window).resize(function(){
         $(".menuTop").removeAttr("style");
         $(".toggleMenu").removeClass("change");
+      });
+
+      $(".sliderSc").bxSlider({
+        auto:true,
+        controls:false,
+        pager:false
+
       });
 
     });
@@ -108,20 +116,160 @@
   </header>
    <div class="content">
    <ul class="contList">
-     <li>1</li>
-     <li>2</li>
-     <li>3</li>
-     <li>4</li>
-     <li>5</li>
-     <li>6</li>
-     <li>7</li>
-     <li>8</li>
-     <li>9</li>
-     <li>10</li>
-     <li>11</li>
+     <li class="section1">
+       <a href="#"><img src="images/section1icon.png" alt="">
+       <p>회사소개</p></a>
+     </li>
+     <li>
+       <img src="images/section1_2.png" alt="">
+     </li>
+     <li  class="sec1v3">
+       <p>소식</p>
+       <div class="sliderS1">
+         <ul class="sliderSc">
+           <li class="clearfix">
+             <div class="txt1Ts">
+               <p>달콤하고 시원한 빽다방 <br>시그니처 메뉴 출시 <br>
+                 빽다방에서만 만나보실 수 있는<br>시그니처 메뉴!</p>
+             </div>
+             <img src="images/section1_4.png" alt="">
+           </li>
+           <li class="clearfix">
+             <div class="txt1Ts">
+               <p>달콤하고 시원한 빽다방 <br>시그니처 메뉴 출시 <br>
+                 빽다방에서만 만나보실 수 있는<br>시그니처 메뉴!</p>
+             </div>
+             <img src="images/section1_4.png" alt="">
+           </li>
+           <li class="clearfix">
+             <div class="txt1Ts">
+               <p>달콤하고 시원한 빽다방 <br>시그니처 메뉴 출시 <br>
+                 빽다방에서만 만나보실 수 있는<br>시그니처 메뉴!</p>
+             </div>
+             <img src="images/section1_4.png" alt="">
+           </li>
+         </ul>
+       </div>
+     </li>
+     <li class="section1">
+        <a href="">
+          <img src="images/news.png" alt="">
+          <p>최근소식</p>
+        </a>
+     </li>
+     <li class="section1">
+       <a href="">
+         <img src="images/menuicon.png" alt="">
+         <p>메뉴</p>
+       </a>
+     </li>
+     <li class="sec2V3">
+       <a href="#">
+         <div class="txtWrap">
+           <h3>FRESH<br>COFFEE</h3>
+           <p>신선한 뉴투롭 원두를 사용하여<br>추출한 커피메뉴! </p>
+         </div>
+       </a>
+     </li>
+     <li class="sec3V1">
+       <a href="#">
+         <div class="sec3Txt1">
+           <h3>SPECIALTY<br>COFFEE</h3>
+           <p>자연으로 키운 커피<br>시그니처 블렌딩</p>
+         </div>
+       </a>
+     </li>
+     <li class="sec3V2">
+       <a href="#">
+         <div class="sec3Txt2">
+           <h3>VARIOUS<br>BEVERAGE</h3>
+           <p>에이드, 티, 주스 등 취향대로<br>골라 먹는 즐거움!</p>
+         </div>
+       </a>
+     </li>
+     <li class="section1">
+       <a href="">
+         <img src="images/eventicon.png" alt="">
+         <p>이벤트</p>
+       </a>
+     </li>
+     <li class="section1">
+       <a href="#">
+         <img src="images/sec10icon.png" alt="">
+         <p>매장찾기</p>
+       </a>
+     </li>
+     <li class="sec4V1">
+       <a href="#">
+         <div class="sec4Txt1">
+           <h3>TASTY<br>ICE CREAM /<br>CDESSERT</h3>
+           <p>달콤한 아이스크림부터<br>든든한 브레드 까지!</p>
+         </div>
+       </a>
+     </li>
    </ul>
  </div>
-
+ <div class="ms5">
+   <h3>STORE</h3>
+   <p>원하는 지역 매장을 검색해 보세요</p>
+   <input type="text" placeholder="Find a store in your area!">
+   <img src="images/ms5icon.png" alt="">
+ </div>
+ <div class="vision">
+   <p>비전</p>
+   <h2>VISION 2021</h2>
+   <ul class="clearfix vSec">
+     <li>
+       <a href="">
+       <img src="images/visS1icon.png" alt="">
+       <div class="txtVis">
+         <h3>완벽한 원두</h3>
+         <p>최상의 공간에서의 로스팅,<br>높은 신선도 유지와 빠른 배송<br> 로스팅 완료 후 2주 내에 사용</p>
+        </div>
+       </a>
+     </li>
+     <li>
+       <a href="">
+       <img src="images/visS2icon.png" alt="">
+       <div class="txtVis">
+         <h3>높은 퀄리티 식자재</h3>
+         <p>최공동으로 개발한<br>“바리스타즈밀크”와 <br> 높은 품질의 식자재를 사용</p>
+        </div>
+       </a>
+     </li>
+     <li>
+       <a href="">
+       <img src="images/visS3icon.png" alt="">
+       <div class="txtVis">
+         <h3>합리적 커피 브랜드 No.1</h3>
+         <p>시즌별로 트렌디한 음료를<br>다른 이들보다 빨리,<br> 그리고 저렴한 가격</p>
+        </div>
+       </a>
+     </li>
+     <li>
+       <a href="">
+       <img src="images/visS4icon.png" alt="">
+       <div class="txtVis">
+         <h3>상생경영 이념</h3>
+         <p>빽다방과 함께하는<br>가맹본부, 가맹점주, 파트너사의<br> 동반 성장 추구</p>
+        </div>
+       </a>
+     </li>
+   </ul>
+ </div>
+<div class="content2">
+  <div class="cont2List">
+    <ul class="clearfix">
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+      <li>6</li>
+      <li>7</li>
+    </ul>
+  </div>
+</div>
 
 
 </body>
