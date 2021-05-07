@@ -40,4 +40,13 @@ $(document).ready(function(){
 
   });
 
+  $(".tab li").click(function(){
+    let t = $(this).index();
+    console.log(t)
+
+    $(".tab li").removeClass("active");
+    $(this).addClass("active")
+    $(".menu_contWrap .subCont").hide().eq(t).fadeIn();
+  });
+
 });
