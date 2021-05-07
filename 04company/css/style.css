@@ -328,11 +328,7 @@ display: flex; align-items: center; transform: translateX(50%); margin-bottom: 5
   .toggleMenu { display: block;  top: 10px; z-index: 1; }
   .menuTop{
         position: fixed;
-<<<<<<< HEAD
          width: 80%; height: 600px;
-=======
-         width: 80%; height: 100%;
->>>>>>> edeec3c1dcd312a690c23d4a6c313b5499af4cd1
         background:#fff; right:0; top:-100%;
          display:flex; justify-content: center; align-items: center;
         z-index: 1;
