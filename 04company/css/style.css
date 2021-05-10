@@ -218,6 +218,27 @@ margin: 28px 0; }
 .ms5 input { width: 180px; height: 30px; border: 1px solid #0E347E; color:#909090; position: absolute; top: 120px; }
 .ms5 img{position: absolute; bottom: 0; right: 0;}
 
+
+.modal { position: relative;
+/* background-image: url(../images/section1_2.png); background-position: center;
+background-repeat: no-repeat; background-size: cover; */
+}
+
+.modal img.in{ position: absolute;     top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);}
+ .modal .bg {
+        width: 100%;
+        height: 100%;
+        background: #000;
+        opacity: 0;
+        position: absolute;
+        transform: scale(0.7);
+        transition: .3s;
+    }
+    .modal:hover .bg{opacity:0.5;transform:scale(1)}
+
+
 /* .vision 비전 */
 
 
@@ -238,17 +259,15 @@ padding: 74px;
 .vision > P { color: #fff; font-weight: bold; font-size: 18px; text-align: center; width: 100%; }
 .vision > h2 {color: #fff; font-weight: bold; font-size: 50px; text-align: center; display: block; margin-bottom: 84px;}
 .vision .txtVis{ color: #fff; text-align: center;}
-.vision li {width: 310px; _background: #000;
-  justify-content: center; display: -webkit-flex;
-display: -ms-flex;
-display: flex; align-items: center;
-text-align: center;
-float: left;
+.vision li {  float: left;width:calc( ( 100% - 60px ) / 4 );
+  height: 380px;padding-top:70px;border-radius: 10px;transition:0.3s;cursor:pointer
 }
+.vision li:hover{
+  box-shadow:10px 10px 12px rgba(0,0,0,0.8);transform:translate(-10px,-10px)
+}
+.vision li + li{margin-left:20px;}
 
-.vision li img{justify-content: center; display: -webkit-flex;
-display: -ms-flex;
-display: flex; align-items: center; transform: translateX(50%); margin-bottom: 50px;}
+.vision li img{display: block;margin: 0 auto; margin-bottom: 10px;}
 
 .txtVis > h3 { margin-bottom: 20px;font-weight: bold; font-size: 24px;}
 .txtVis > p { font-weight: bold; font-size: 18px;}
@@ -315,12 +334,25 @@ margin: 0 auto; }
 
 .mfooter p{ text-align: center; display: block; line-height: 15px; color: #202020; font-size: 14px;}
 
+.top{
+  position: fixed; width: 100px;height: 100px;
+ background:#0E347E; right: 50px;bottom: 50px;
+ border-radius:50px;display:flex;justify-content: center;align-items: center;
+ animation:viewTop 1s infinite alternate;
+ cursor:pointer;transition:0.3s;
+ color:#fff;
+}
+.top.view{opacity: 1;}
+@keyframes viewTop {
+  to{transform: translateY(-20px);}
+}
+
 
 
 /* menu.html 메뉴 페이지!!!!!!!!!!!!!!!!!! */
 
 .contentTop {
-  background-image: url(../images/menubgimg.png);
+  background-image: url(../images/soundbgpt.png);
   background-size:cover; background-position: center;
   background-repeat: no-repeat;
   width: 100%; height: 330px;
@@ -374,6 +406,13 @@ ul.tab li.active a {  color: #fff}
   display: block;  color: #909090; text-align: center;
   font-size: 24px; font-weight: bold;
 }
+
+.companyTop{
+  background-image: url(../images/companybgpt.png);
+  background-size:cover; background-position: center;
+  background-repeat: no-repeat;
+  width: 100%; height: 330px;
+}
 /* 소식페이지 */
 
 
@@ -388,6 +427,28 @@ ul.tab li.active a {  color: #fff}
 .sub_class {display: none;}
 .sub_search, .sub_open {display: none;}
 
+.newsTop {
+  background-image: url(../images/newsbgpt.png);
+  background-size:cover; background-position: center;
+  background-repeat: no-repeat;
+  width: 100%; height: 330px;
+}
 
+/* 커피클래스 */
 
+.classTop {
+  background-image: url(../images/classbgpt.png);
+  background-size:cover; background-position: center;
+  background-repeat: no-repeat;
+  width: 100%; height: 330px;
+}
+
+/* 고객의소리 */
+
+.soundTop {
+  background-image: url(../images/companybgpt.png);
+  background-size:cover; background-position: center;
+  background-repeat: no-repeat;
+  width: 100%; height: 330px;
+}
 .mb70{margin-bottom: 70px!important;}

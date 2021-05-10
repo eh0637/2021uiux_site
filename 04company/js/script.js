@@ -39,6 +39,11 @@ $(document).ready(function(){
     pager:false
 
   });
+  $('.youtube').colorbox({
+      iframe:true,
+      innerWidth:700,
+      innerHeight:393.75
+  });
 
   $(".tab li").click(function(){
     let t = $(this).index();

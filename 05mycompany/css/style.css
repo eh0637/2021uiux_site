@@ -60,23 +60,17 @@
 .content .contList>li:nth-child(2n+1){background:skyblue;}
 .content .contList>li:nth-child(3n+1){background:pink;}
 
-<<<<<<< HEAD
-.content .contList > li {width: 25%; height: 310px; }
-.content .contList > li:nth-child(2n+1) {background: skyblue;}
-.content .contList > li:nth-child(3n+1) {background: pink;}
-.content .contList > li:nth-child(1) {}
-.content .contList > li:nth-child(2) {}
-.content .contList > li:nth-child(3) {width: 50%;}
-.content .contList > li:nth-child(4) {}
-.content .contList > li:nth-child(5) {}
-.content .contList > li:nth-child(6) {width: 50%;}
-.content .contList > li:nth-child(7) {height: 620px;}
-.content .contList > li:nth-child(8) {width: 50%;}
-.content .contList > li:nth-child(9) {}
-.content .contList > li:nth-child(10) {position: absolute; bottom: 0;left: 310px;}
-.content .contList > li:nth-child(11) {width: 50%; position: absolute; right: 0;bottom: 0; }
-
-
+.content .contList>li:nth-child(1){}
+.content .contList>li:nth-child(2){}
+.content .contList>li:nth-child(3){width: 50%;}
+.content .contList>li:nth-child(4){}
+.content .contList>li:nth-child(5){}
+.content .contList>li:nth-child(6){width: 50%;}
+.content .contList>li:nth-child(7){height:620px;}
+.content .contList>li:nth-child(8){width: 50%;}
+.content .contList>li:nth-child(9){}
+.content .contList>li:nth-child(10){position: absolute;left: 310px;bottom: 0;}
+.content .contList>li:nth-child(11){position: absolute;width: 50%;right: 0;bottom: 0;}
 
 
 /* container */
@@ -102,16 +96,3 @@
 .container .section li img{display: block;margin: 0 auto}
 .container .section .card_body{text-align: center;padding: 20px 40px;}
 .container .section .card_body h3{margin-bottom: 10px;}
-=======
-.content .contList>li:nth-child(1){}
-.content .contList>li:nth-child(2){}
-.content .contList>li:nth-child(3){width: 50%;}
-.content .contList>li:nth-child(4){}
-.content .contList>li:nth-child(5){}
-.content .contList>li:nth-child(6){width: 50%;}
-.content .contList>li:nth-child(7){height:620px;}
-.content .contList>li:nth-child(8){width: 50%;}
-.content .contList>li:nth-child(9){}
-.content .contList>li:nth-child(10){position: absolute;left: 310px;bottom: 0;}
-.content .contList>li:nth-child(11){position: absolute;width: 50%;right: 0;bottom: 0;}
->>>>>>> edeec3c1dcd312a690c23d4a6c313b5499af4cd1
