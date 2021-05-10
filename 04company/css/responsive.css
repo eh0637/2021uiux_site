@@ -116,9 +116,29 @@ display: flex; justify-content: center; align-items: center;}
 .mfooter {display: block;}
 .footerWrap{display: none;}
 
+/* menu.html 메뉴 페이지!!!!!!!!!!!!!!!!!! */
+.contentTop {position: relative;}
+.contentTop_Txt p{ display: none;}
+.sub { width: calc(100% - 32px); margin: 0 auto; position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0}
+.sub_menu li {  width: calc( 100% / 5); }
+.sub_list{ width: 100%; margin: 0 auto;}
+.subCont {width: 100%; margin: 0 auto; padding: 0 16px;}
+.sub_menu li a { display: block; line-height: 40px;
+  display: block;  color: #909090; text-align: center;
+  font-size: 10px; font-weight: bold;
+}
 
-
-
-
-
+.sub_company li {  width: calc( 100% / 3); }
+.sub_company li a { display: block; line-height: 40px;
+  display: block;  color: #909090; text-align: center;
+  font-size: 16px; font-weight: bold;
+}
+.sub_news li {  width: calc( 100% / 4); }
+.sub_news li a { display: block; line-height: 40px;
+  display: block;  color: #909090; text-align: center;
+  font-size: 16px; font-weight: bold;
+}
   }
