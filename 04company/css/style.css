@@ -330,8 +330,8 @@ padding: 74px;
 .cont3List .cont3sec2 .cont3Txt h3 { color: #0E347E; font-weight: bold; font-size: 36px;}
 .cont3List .cont3sec2 .cont3Txt h3:after{content: ""; height: 2px; width: 38px; background: #0E347E; display: block; margin: 28px 0;}
 .cont3List .cont3sec2 .cont3Txt p{margin-bottom:50px;}
-.cont3List .cont3sec2 .cont3Txt button { background: none; border: 2px solid #0E347E; width: 100px; height: 40px; font-weight: bold;}
-
+.cont3List .cont3sec2 .cont3Txt button { background: none; border: 2px solid #0E347E; width: 100px; height: 40px; font-weight: bold;display: block;}
+.cont3List .cont3sec2 .cont3Txt button a {display: block;}
 
 #footer { content: ""; width: 100%; height: 2px; background: #FED600; display: block;}
 .footerWrap{width: 1240px; margin: 0 auto; padding: 30px 0 ;}
