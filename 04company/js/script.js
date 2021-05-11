@@ -82,5 +82,6 @@ $(document).ready(function(){
   $(".top").click(function(){
     $("html,body").animate({scrollTop:0},1000);
   });
+  new WOW().init();
 
 });
