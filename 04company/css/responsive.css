@@ -29,7 +29,7 @@ width: 100%;
   .menuWrap{width: 100%;  }
         .logo {  width: 120px;
     height: 40px; }
-  .toggleMenu {  _position: fixed; display: block;  top: 10px; z-index: 1; }
+  .toggleMenu {  position: fixed; display: block;  top: 10px; z-index: 1; }
   .menuTop{
         position: fixed;
          width: 80%; height: 100%;
