@@ -19,7 +19,7 @@ $(document).ready(function(){
     if(toggle == "toggleMenu"){
       $(".toggleMenu").addClass("change");
       $(".menu_overlay").addClass("rgba");
-      $(".menu_overlay").animate({top:0});
+      // $(".menu_overlay").animate({top:0});
 
       $(".menuTop").animate({top:0});
 
