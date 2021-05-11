@@ -3,11 +3,11 @@
 @media screen and (max-width:570px){
 
 
-.hNav {_width: 100%;}
+.hNav {width: 100%;}
 .hWrapT{
     height: 70px;
     _background: #fff;
-
+width: 100%;
     top: inherit;
     left: inherit;
     transform: inherit;
