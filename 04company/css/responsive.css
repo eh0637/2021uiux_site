@@ -6,8 +6,8 @@
 .hNav {_width: 100%;}
 .hWrapT{
     height: 70px;
-    background: #fff;
-    /* position: inherit; */
+    _background: #fff;
+
     top: inherit;
     left: inherit;
     transform: inherit;
@@ -29,7 +29,7 @@
   .menuWrap{width: 100%;  }
         .logo {  width: 120px;
     height: 40px; }
-  .toggleMenu {  position: fixed; display: block;  top: 10px; z-index: 1; }
+  .toggleMenu {  _position: fixed; display: block;  top: 10px; z-index: 1; }
   .menuTop{
         position: fixed;
          width: 80%; height: 100%;
