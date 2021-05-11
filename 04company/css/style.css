@@ -414,6 +414,7 @@ margin: 0 auto; }
 ul.tab li.active{ background:#FED600;}
 ul.tab li.active a {  color: #fff}
 
+ .sub li::after{content: ""; display: block; width: 100%; height: 2px; background: #fed600;}
 
 
 /* 뺵다방 페이지 */
