@@ -136,7 +136,7 @@ display: flex; justify-content: center; align-items: center;}
 .subCont {width: 100%; margin: 0 auto; padding: 0 16px;}
 .sub_menu li a { display: block; line-height: 40px;
   display: block;  color: #909090; text-align: center;
-  font-size: 10px; font-weight: bold;
+  font-size: 12px; font-weight: bold;
 }
 
 .sub_company li {  width: calc( 100% / 3); }
