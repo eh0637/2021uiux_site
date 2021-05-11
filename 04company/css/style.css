@@ -375,7 +375,7 @@ margin: 0 auto; }
   background-image: url(../images/soundbgpt.png);
   background-size:cover; background-position: center;
   background-repeat: no-repeat;
-  width: 100%; height: 330px;
+  width: 100%; _height: 330px;
 }
 
 .contentTop_Txt{ text-align: center; padding: 70px 0;}
@@ -432,7 +432,7 @@ ul.tab li.active a {  color: #fff}
   background-image: url(../images/companybgpt.png);
   background-size:cover; background-position: center;
   background-repeat: no-repeat;
-  width: 100%; height: 330px;
+  width: 100%; _height: 330px;
 }
 /* 소식페이지 */
 
@@ -452,7 +452,7 @@ ul.tab li.active a {  color: #fff}
   background-image: url(../images/newsbgpt.png);
   background-size:cover; background-position: center;
   background-repeat: no-repeat;
-  width: 100%; height: 330px;
+  width: 100%; _height: 330px;
 }
 
 /* 커피클래스 */
@@ -461,7 +461,7 @@ ul.tab li.active a {  color: #fff}
   background-image: url(../images/classbgpt.png);
   background-size:cover; background-position: center;
   background-repeat: no-repeat;
-  width: 100%; height: 330px;
+  width: 100%; _height: 330px;
 }
 
 /* 고객의소리 */
@@ -470,7 +470,7 @@ ul.tab li.active a {  color: #fff}
   background-image: url(../images/companybgpt.png);
   background-size:cover; background-position: center;
   background-repeat: no-repeat;
-  width: 100%; height: 330px;
+  width: 100%; _height: 330px;
 }
 
 /* 창업안내 */
@@ -478,6 +478,6 @@ ul.tab li.active a {  color: #fff}
   background-image: url(../images/newsbgpt.png);
   background-size:cover; background-position: center;
   background-repeat: no-repeat;
-  width: 100%; height: 330px;
+  width: 100%; _height: 330px;
 }
 .mb70{margin-bottom: 70px!important;}
