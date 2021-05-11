@@ -29,13 +29,13 @@ width: 100%;
   .menuWrap{width: 100%;  }
         .logo {  width: 120px;
     height: 40px; }
-  .toggleMenu {  position: fixed; display: block;  top: 10px; z-index: 1; }
+  .toggleMenu {  position: fixed; display: block;  top: 10px; z-index: 2;  }
   .menuTop{
         position: fixed;
          width: 80%; height: 100%;
         background:#fff; right:0; top:-100%;
          display:flex; justify-content: center; align-items: center;
-        z-index: 1;
+        z-index: 2;
         transition:0.3s;
 
 

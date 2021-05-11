@@ -18,11 +18,15 @@ $(document).ready(function(){
 
     if(toggle == "toggleMenu"){
       $(".toggleMenu").addClass("change");
+      $(".menu_overlay").addClass("rgba");
+      $(".menu_overlay").animate({top:0});
 
       $(".menuTop").animate({top:0});
 
     }else {
       $(".toggleMenu").removeClass("change");
+      $(".menu_overlay").removeClass("rgba");
+      $(".menu_overlay").fadeIn()
 
       $(".menuTop").stop().animate({top:"-100%"});
     }
@@ -47,14 +51,42 @@ $(document).ready(function(){
       innerHeight:393.75
   });
 
-  $(".tab li").click(function(){
-    let t = $(this).index();
-    console.log(t)
 
-    $(".tab li").removeClass("active");
-    $(this).addClass("active")
-    $(".menu_contWrap .subCont").hide().eq(t).fadeIn();
-  });
+  let num = location.href.indexOf("=") + 1;  // 번호찾기
+  let string = location.href.substring(num);  //문자열자르
+  console.log(string);
+
+   if( location.href.indexOf("=") > 0 ){
+      view(string);
+   }else{
+      view(0)
+   }
+
+   function view(menu){
+         $(".tab li").removeClass("active").eq(menu).addClass("active");
+         $(".menu_contWrap .subCont").hide().eq(menu).show();
+   }
+   $(".tab li").click(function(){
+      var menu = $(this).index();
+      view(menu);
+   });
+
+
+
+
+
+  // $(".tab li").click(function(){
+  //   let t = $(this).index();
+  //   console.log(t)
+  //
+  //   $(".tab li").removeClass("active");
+  //   $(this).addClass("active")
+  //   $(".menu_contWrap .subCont").hide().eq(t).fadeIn();
+  // });
+
+
+
+
 
   const menuPos = $(".hWrapT").offset().top;
   const topPos = $(".top").offset().top;
