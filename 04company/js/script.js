@@ -36,6 +36,7 @@ $(document).ready(function(){
     $(".menuTop").removeAttr("style");
     $(".toggleMenu").removeClass("change");
     $(".hWrapT").removeClass("fixed")
+    $(".menu_overlay").removeClass("rgba");
 
   });
 
