@@ -14,5 +14,8 @@ $(document).ready(function(){
     $(".tab_menuWrap .tab_contList").hide().eq(t).fadeIn();
   });
 
- $( ".accordion" ).accordion();
+  $(".accordion").on('click',function(){
+    $(this).next(".list_subCon").slideToggle(100);
+  });
+
 });
