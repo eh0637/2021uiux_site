@@ -10,7 +10,7 @@ $(document).ready(function(){
     $(this).next(".list_subCon").slideToggle(100);
   });
 
-
+  $(".tab_menuWrap .tab_contList").hide().eq(1).show();
   $(".cont_menu li").click(function(){
     let t = $(this).index();
     console.log(t)
