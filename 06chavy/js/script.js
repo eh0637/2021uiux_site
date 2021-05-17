@@ -5,6 +5,12 @@ $(document).ready(function(){
     pager:false
   });
 
+
+  $(".accordion").on('click',function(){
+    $(this).next(".list_subCon").slideToggle(100);
+  });
+
+
   $(".cont_menu li").click(function(){
     let t = $(this).index();
     console.log(t)
@@ -14,5 +20,5 @@ $(document).ready(function(){
     $(".tab_menuWrap .tab_contList").hide().eq(t).fadeIn();
   });
 
- $( ".accordion" ).accordion();
+ // $( ".accordion" ).accordion();
 });
