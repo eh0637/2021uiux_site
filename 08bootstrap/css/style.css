@@ -171,7 +171,6 @@
 #header .navbar{ transition: 0.3s}
 #header .navbar.fixed-top {
   box-shadow: var(--box-shadow2); background: #fff;
-  /* background:var(--primary-color-2) !important;  색 변화 */
 }
 
 #header .nav-item:hover{ border-bottom: 2px solid var(--primary-color-1); }
@@ -180,92 +179,3 @@
 ≥576px	Medium
 ≥768px	Large
 ≥992px	Extra large */
-
-@media screen and (max-width:992px){
-#footer {background: #000;}
-@keyframes boxR01 {
-  form{width: 0;}
-    to{width: 154px;}
-}
-
-@keyframes boxR02 {
-  form{height: 0;}
-    to{height: 154px;}
-}
-@keyframes boxR03 {
-  form{width: 0;}
-    to{width: 154px;}
-}
-@keyframes boxR04 {
-  form{height: 0;}
-    to{height: 154px;}
-}
-
-
-}
-@media screen and (max-width:768px){
-#footer {background: #000;}
-@keyframes boxR01 {
-  form{width: 0;}
-    to{width: 203px;}
-}
-
-@keyframes boxR02 {
-  form{height: 0;}
-    to{height: 203px;}
-}
-@keyframes boxR03 {
-  form{width: 0;}
-    to{width: 203px;}
-}
-@keyframes boxR04 {
-  form{height: 0;}
-    to{height: 203px;}
-}
-
-
-}
-@media screen and (max-width:600px){
-#footer {background: #000;}
-@keyframes boxR01 {
-  form{width: 0;}
-    to{width: 143px;}
-}
-
-@keyframes boxR02 {
-  form{height: 0;}
-    to{height: 143px;}
-}
-@keyframes boxR03 {
-  form{width: 0;}
-    to{width: 143px;}
-}
-@keyframes boxR04 {
-  form{height: 0;}
-    to{height: 143px;}
-}
-
-
-}
-@media screen and (max-width:576px){
-#footer {background: #000;}
-@keyframes boxR01 {
-  form{width: 0;}
-    to{width: 155px;}
-}
-
-@keyframes boxR02 {
-  form{height: 0;}
-    to{height: 155px;}
-}
-@keyframes boxR03 {
-  form{width: 0;}
-    to{width: 155px;}
-}
-@keyframes boxR04 {
-  form{height: 0;}
-    to{height: 155px;}
-}
-
-
-}
