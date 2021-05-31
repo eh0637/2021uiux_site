@@ -28,7 +28,7 @@ $(document).ready(function(){
     center:true,
     loop:true,
     margin:40,
-    autoplay:true,
+    autoplay:false,
     responsive:{
       0:{items:3},
       600:{items:3},
@@ -46,7 +46,7 @@ $(document).ready(function(){
     btns.eq(i).addClass("active")
 
     let selector  = btns.eq(i).attr("data-filter");
-    console.log(selector);
+    // console.log(selector);
 
     $(".management .view").isotope({
       filter:selector
@@ -62,6 +62,29 @@ $(document).ready(function(){
   });
 
 
+  // let hoverSize = $( ".owl-item.cloned.active " ).width();
+  // console.log(hoverSize);
+
+  // $(".tab li").click(function(){
+  //   let t = $(this).index();
+  //   console.log(t)
+  //
+  //   $(".tab li").removeClass("active2");
+  //   $(this).addClass("active2")
+  //   $(".subCont_pageWrap .subCont_page").hide().eq(t).show();
+  // });
+  //
+
+  $(".subCont_pageWrap .subCont_page").hide().eq(0).show();
+
+  $(".tab li").click(function(){
+    let t = $(this).index();
+    console.log(t)
+
+    $(".tab li").removeClass("active2");
+    $(this).addClass("active2")
+    $(".subCont_pageWrap .subCont_page").hide().eq(t).fadeIn();
+  });
 
 
 
