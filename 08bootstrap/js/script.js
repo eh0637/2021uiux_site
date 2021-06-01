@@ -37,6 +37,7 @@ $(document).ready(function(){
     }
   });
     $(".view .popup_link").magnificPopup({type:"image"});
+    $(".picture .popup_link").magnificPopup({type:"image"});
 
   const btns = $(".management .btn-group button");
   btns.click(function(){
@@ -87,13 +88,10 @@ $(document).ready(function(){
   });
 
 
-$(".hoverscript").hover(function(){
-  let i = $(this).index();
-  console.log(i)
-  $(".hoverscript").eq(i).find(".card_boxhover").attr("class","card_boxhover")
-},function(){
-  $(".hoverscript .card_boxhover").attr("class","card_boxhover moon")
-})
-
+  $(".notice .moon").hover(function(){
+    $(this).removeClass("moon")
+  },function(){
+    $(this).addClass("moon")
+  })
 
 });

@@ -11,7 +11,7 @@ body{font-family: 'Nanum Gothic', sans-serif;}
   --box-shadow2:0 10px 20px rgba(57,56,61,0.3);
 }
 /* .navbar-nav li{line-height: 25px;} */
-.nav-item .nav-link { font-size: 22px; font-weight: bold; color: var(--font-color-1) !important;}
+.nav-item .nav-link{ font-size: 22px; font-weight: 800; color: var(--font-color-1) !important;}
 
 /* 메인슬라이드 */
 
@@ -151,15 +151,7 @@ body{font-family: 'Nanum Gothic', sans-serif;}
 
 .notice .container h2.conts_title:after { content: ""; display: block; height: 2px; width: 111px; background: var(--primary-color-1); margin: 10px 0;}
 
-.notice .hover_bg{
-    width: 100%; height: 100%; background: #000; padding: 0 15px;
-      opacity:0;position: absolute; transform:scale(0.4);transition:.3s;
-      top: 0; left: 0; border-radius: 10px
-    }
-.notice .hover_box p.rem2 { font-size: 2rem;}
-.notice img:hover .hover_bg {opacity:0.7; transform:scale(1)}
-.notice img:hover p{opacity: 1; transform:scale(1); top: 40%;
-left: 50%; transform: translate(-50%);}
+.notice .card_boxhover img{border-radius: 10px; }
 
  /* MULTIMEDIA */
  .multimedia {background:  var(--bgcolor1);}
@@ -201,7 +193,7 @@ left: 50%; transform: translate(-50%);}
     /* display:flex; justify-content: center; align-items:center; */
 
   }
- .sub_top .sub_page_title { text-align: center; color: #fff; font-size: 64px;font-weight: 800;  }
+ .sub_top .sub_page_title { text-align: center; color: #fff; font-size: 64px;font-weight: 800; padding: 80px; }
 
 
 .sub .tab{margin-bottom: 0!important;  }
@@ -211,3 +203,123 @@ left: 50%; transform: translate(-50%);}
 .sub .tab li.active2 {background: var(--primary-color-1);}
 
 .boxul{background: var(--primary-color-1);}
+
+
+ /* sub company*/
+
+ h2.sub_tab_title { font-weight: 800;}
+
+
+
+ /* artist page */
+.all_artists li { float: left; }
+.all_artists li img{ width: 100%; }
+.all_artists li p { font-weight: bold; }
+.artist_menu li:first-child a{ line-height: 100px; background: var(--primary-color-1); text-align: center; font-size: 2rem; color: #fff;}
+.artist_menu li {  background: #fff; _margin: 0 20px;  }
+.artist_menu li a {text-align: center; display: block; font-weight: 600; color: var(--font-color-1); line-height: 44px; padding: 0 20px; border-bottom: 2px solid var(--primary-color-1); }
+
+.artist_menu li.active3 {background: var(--primary-color-1);}
+
+/* .artist_menu {position: absolute;} */
+/* h2.artist_name{font-weight: bold; margin: 0 auto;
+   position: absolute; left: 50%; transform: translateX(-50%);
+   z-index: 1 } */
+
+ .artist_info h2,
+ .artist_info p,
+ .artist_info h3{ font-weight: 800;}
+.artist_info h2{font-size: 4rem;}
+.artist_info h3{ color: var(--primary-color-1);}
+.artist_info p{ color: var(--primary-color-1); font-size: 2rem;}
+
+
+/* kwill */
+
+.picCont{background: var(--bgcolor1);}
+.artist_pic{ background: url(../images/sub/kwill.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+}
+
+.sub_subcT{ font-size: 1.2rem; font-weight: 800; }
+.sub_subcT:after{content: ""; display: block; width: 60px;  height: 2px; background:  var(--primary-color-1); margin: 4px 0;}
+
+.win .row li { float: left; margin-bottom: 2px;}
+.win .row li p{ text-align: center; display: block; border-bottom: 1px solid #B7B7B7; line-height: 30px; font-size: 0.9rem;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*  */
