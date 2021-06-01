@@ -90,9 +90,9 @@ $(document).ready(function(){
 $(".hoverscript").hover(function(){
   let i = $(this).index();
   console.log(i)
-  $(".hoverscript > div").eq(i).find(".card_boxhover").attr("class",".card_boxhover")
+  $(".hoverscript").eq(i).find(".card_boxhover").attr("class","card_boxhover")
 },function(){
-  $(".hoverscript").attr("class","card_boxhover moon")
+  $(".hoverscript .card_boxhover").attr("class","card_boxhover moon")
 })
 
 
