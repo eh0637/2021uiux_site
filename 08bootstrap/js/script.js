@@ -92,7 +92,7 @@ $(".hoverscript").hover(function(){
   console.log(i)
   $(".hoverscript > div").eq(i).find(".card_boxhover").attr("class",".card_boxhover")
 },function(){
-  $(".hoverscript").attr("class",".card_boxhover moon")
+  $(".hoverscript").attr("class","card_boxhover moon")
 })
 
 
