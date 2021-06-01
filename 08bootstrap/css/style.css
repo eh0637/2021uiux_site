@@ -7,6 +7,7 @@ body{font-family: 'Nanum Gothic', sans-serif;}
   --primary-color-1:#ffa300;
   --bgcolor1:#f6f6f6;
   --box-shadow:10px 10px 4px rgba(57, 56, 61, 0.3);
+  --box-shadow4:10px 10px 20px rgba(0, 0, 0, 0.4);
   --box-shadow3:20px 20px 15px rgba(0, 0, 0, 0.6);
   --box-shadow2:0 10px 20px rgba(57,56,61,0.3);
 }
@@ -237,10 +238,7 @@ body{font-family: 'Nanum Gothic', sans-serif;}
 /* kwill */
 
 .picCont{background: var(--bgcolor1);}
-.artist_pic{ background: url(../images/sub/kwill.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 450px;
+.artist_pic img{ box-shadow: var(--box-shadow4);
 }
 
 .sub_subcT{ font-size: 1.2rem; font-weight: 800; }
@@ -250,6 +248,17 @@ body{font-family: 'Nanum Gothic', sans-serif;}
 .win .row li p{ text-align: center; display: block; border-bottom: 1px solid #B7B7B7; line-height: 30px; font-size: 0.9rem;}
 
 
+
+.album .row li { float: left; margin-bottom: 2px;}
+.album .row li p{ text-align: center; display: block; border-bottom: 1px solid #B7B7B7; line-height: 30px; font-size: 0.9rem;}
+.album {background: var(--bgcolor1);}
+
+
+.back-btn{
+  font-weight: bold; font-size: 0.9rem; color: var(--primary-color-1)!important;
+  transition: 0.3s;
+}
+.back-btn:hover{transform: scale(1.1);}
 
 
 
