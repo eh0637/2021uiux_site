@@ -113,27 +113,27 @@ body{font-family: 'Nanum Gothic', sans-serif;}
 .management .btn-group button + button { margin-left: 30px;}
 .management .btn-group button.active{color:var(--primary-color-1); }
 .management img {border-radius: 10px ; _position: absolute; transition:.3s}
-.hover_box{overflow: hidden;}
-.hover_box img{
+.management .hover_box{overflow: hidden;}
+.management .hover_box img{
       position: relative; transition:0.3s; transform:scale(1); }
 
-.hover_box:hover{ transform:scale(1.1); transition:0.3s;
-  box-shadow: var(--box-shadow);border-radius: 10px ;
+.management .hover_box:hover{ transform:scale(1.1); transition:0.3s;
+  box-shadow: var(--box-shadow); border-radius: 10px ;
 
 
 }
-.management .hover_bg{
+ .management .hover_bg{
     width: 100%; height: 100%; background: var(--primary-color-1); padding: 0 15px;
       opacity:0;position: absolute; transform:scale(0.6);transition:.3s;
       top: 0; left: 0; border-radius: 10px
     }
 
-    .hover_box p{ position: absolute; transition:0.3s;    top: 100%;
+    .management .hover_box p{ position: absolute; transition:0.3s;    top: 100%;
     left: 50%;  transform:scale(0.5);
     transform: translate(-50%); color: #fff; font-weight: bold; opacity: 0;
     }
- .management .hover_box:hover .hover_bg {opacity:0.7; transform:scale(1)}
- .management .hover_box:hover p{opacity: 1; transform:scale(1); top: 40%;
+.management .hover_box:hover .hover_bg {opacity:0.7; transform:scale(1)}
+.management .hover_box:hover p{opacity: 1; transform:scale(1); top: 40%;
     left: 50%; transform: translate(-50%);}
 
 
@@ -213,6 +213,8 @@ body{font-family: 'Nanum Gothic', sans-serif;}
 
 
  /* artist page */
+
+
 .all_artists li { float: left; }
 .all_artists li img{ width: 100%; }
 .all_artists li p { font-weight: bold; }
@@ -221,6 +223,8 @@ body{font-family: 'Nanum Gothic', sans-serif;}
 .artist_menu li a {text-align: center; display: block; font-weight: 600; color: var(--font-color-1); line-height: 44px; padding: 0 20px; border-bottom: 2px solid var(--primary-color-1); }
 
 .artist_menu li.active3 {background: var(--primary-color-1);}
+.textUp p {position: absolute; left: 50%; transform: translateX(-50%); top: 100%; transition: 0.3s}
+.textUp:hover p {position: absolute; left: 50%; transform: translateX(-50%); top: 40%; font-size: 1.5rem; font-weight: bold; color: var(--primary-color-1); }
 
 /* .artist_menu {position: absolute;} */
 /* h2.artist_name{font-weight: bold; margin: 0 auto;
@@ -235,6 +239,28 @@ body{font-family: 'Nanum Gothic', sans-serif;}
 .artist_info p{ color: var(--primary-color-1); font-size: 2rem;}
 
 
+
+.all_artists .hover_box {position: relative;}
+.all_artists .hover_box img{
+      position: relative; transition:0.3s;
+       /* transform:scale(1); */
+     }
+
+.all_artists .hover_box:hover{
+  /* transform:scale(1.1);  */
+  transition:0.3s;
+  box-shadow: var(--box-shadow);
+
+}
+ .all_artists .hover_bg{
+    width: 100%; height: 100%; background: #000; padding: 0 15px;
+      opacity:0;position: absolute; transform:scale(0.6);transition:.3s;
+      top: 0; left: 0;
+    }
+    .hover_box:hover .hover_bg {opacity:0.5; transform:scale(1)}
+
+
+
 /* kwill */
 
 .picCont{background: var(--bgcolor1);}
@@ -245,33 +271,42 @@ body{font-family: 'Nanum Gothic', sans-serif;}
 .sub_subcT:after{content: ""; display: block; width: 60px;  height: 2px; background:  var(--primary-color-1); margin: 4px 0;}
 
 .win .row li { float: left; margin-bottom: 2px;}
-.win .row li p{ text-align: center; display: block; border-bottom: 1px solid #B7B7B7; line-height: 30px; font-size: 0.9rem;}
+.win .row li p{ _text-align: center; display: block; border-bottom: 1px solid #B7B7B7; line-height: 30px; font-size: 0.9rem;}
 
 
 
 .album .row li { float: left; margin-bottom: 2px;}
-.album .row li p{ text-align: center; display: block; border-bottom: 1px solid #B7B7B7; line-height: 30px; font-size: 0.9rem;}
+.album .row li p{ _text-align: center; display: block; border-bottom: 1px solid #B7B7B7; line-height: 30px; font-size: 0.9rem;}
 .album {background: var(--bgcolor1);}
 
 
 .back-btn{
-  font-weight: bold; font-size: 0.9rem; color: var(--primary-color-1)!important;
+  font-weight: bold; font-size: 0.9rem;
   transition: 0.3s;
 }
+.fas.fa-arrow-left{color: var(--primary-color-1)!important; transform: scale(2); margin-bottom: 10px;}
 .back-btn:hover{transform: scale(1.1);}
 
+.picCont img{ transition: 0.3s; }
+.picCont img:hover{ transform: scale(1.1);}
 
+/* .sub_top{position: relative; } */
+/* .artist_subBtnG { position: absolute; top: 0;} */
 
+/* .artist_subBtnG .navbar-collapse { border: 1px solid #000;} */
+.sub_btnGCent{     top: -30px;
+    position: absolute;     left: 50%;
+    transform: translateX(-50%);}
+.artist_subBtnG .sub_btnGCent{border: 3px solid var(--primary-color-1); background: var(--primary-color-1); padding: 4px 20px; border-radius: 35px; _box-shadow:var(--box-shadow); }
 
+.artist_subBtnG .sub_btnGCent .btn a{ font-size: 1rem; color: #fff; font-weight: bold; transition: 0.3s; }
+.artist_subBtnG .sub_btnGCent .btn{color: #fff; }
+.artist_subBtnG .sub_btnGCent .btn:nth-child(2){
+  border-left: 2px solid #fff; border-right:2px solid #fff; }
+.artist_subBtnG .sub_btnGCent .btn a:hover{  color: #fff!important;}
+.artist_subBtnG .sub_btnGCent .btn:hover{ _background: #;transform: scale(1.2);}
 
-
-
-
-
-
-
-
-
+.artist_subBtnG .sub_btnGCent.fixed{position: fixed; top: 80px; z-index: 2;}
 
 
 

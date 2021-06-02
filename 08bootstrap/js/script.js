@@ -28,7 +28,7 @@ $(document).ready(function(){
     center:true,
     loop:true,
     margin:40,
-    autoplay:false,
+    autoplay:true,
     responsive:{
       0:{items:3},
       600:{items:3},
@@ -92,6 +92,31 @@ $(document).ready(function(){
     $(this).removeClass("moon")
   },function(){
     $(this).addClass("moon")
-  })
+  });
+
+
+
+
+  let subOffset = $(" .artist_subBtnG .sub_btnGCent").height()+100;
+
+  $(window).scroll(function(){
+    lScroll();
+  });
+  function lScroll(){
+    let scroll = $(window).scrollTop();
+    if( subOffset < scroll ){
+      $(".artist_subBtnG .sub_btnGCent").addClass("fixed");
+    }else {
+      $(".artist_subBtnG .sub_btnGCent").removeClass("fixed");
+
+    }
+    }
+    lScroll();
+
+
+
+
+
+
 
 });
