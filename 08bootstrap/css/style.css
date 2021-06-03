@@ -52,6 +52,7 @@ body{font-family: 'Nanum Gothic', sans-serif;}
     background: #f6f6f6;
   }
   .release .container h2.conts_title{font-weight: 800;}
+  .container h2.conts_title{font-weight: 800;}
 .release .container h2.conts_title:after { content: ""; display: block; height: 2px; width: 206px; background: var(--primary-color-1); margin: 10px 0; }
 .release .owl-item{ padding: 30px; _opacity: 0.4; transition: 0.3s;}
 .release .owl-item.center{transform: scale(1.2); opacity: 1; padding: 0;}
@@ -190,10 +191,19 @@ body{font-family: 'Nanum Gothic', sans-serif;}
 
 /* sub page */
 
- .sub_top { background: url(../images/sub/subbg.png) no-repeat center; background-size: cover; height: 400px; position: relative;
+ .sub_top { background: url(../images/sub/subbg.png) no-repeat center; background-size: cover; height: 400px;
+   position: relative;
     /* display:flex; justify-content: center; align-items:center; */
 
   }
+  .sub_top.actorbg { background: url(../images/actbg.png) no-repeat center; background-size: cover; height: 400px; position: relative;
+     /* display:flex; justify-content: center; align-items:center; */
+
+   }
+  .sub_top.artbg { background: url(../images/art.png) no-repeat center; background-size: cover; height: 400px; position: relative;
+     /* display:flex; justify-content: center; align-items:center; */
+
+   }
  .sub_top .sub_page_title { text-align: center; color: #fff; font-size: 64px;font-weight: 800; padding: 80px; }
 
 
