@@ -11,14 +11,23 @@ body{height: 100%;}
 .s1st{
   background-image: url(../images/slider2.png); background-position: center; background-repeat: no-repeat;
   width: 100%;
+  background-position:center;
+   background-repeat: no-repeat;
+   background-size: cover;
   /* height: 500px; */
 }
 .s2st{
   background: url(../images/slider1.png); background-position: center; background-repeat: no-repeat;   width: 100%;
+  background-position:center;
+   background-repeat: no-repeat;
+   background-size: cover;
     /* height: 500px; */
 }
 .s3st{
   background: url(../images/slider3.png); background-position: center; background-repeat: no-repeat;  width: 100%;
+  background-position:center;
+   background-repeat: no-repeat;
+   background-size: cover;
     /* height: 500px; */
 }
 .s1st .text,
@@ -26,3 +35,21 @@ body{height: 100%;}
 { color: #fff; position: absolute; top: 40%; left: 20%; }
 .s2st .text
 { color: #333; position: absolute; top: 20%; left: 65%; }
+
+ul.slider {margin: 0;}
+
+.page2{background: url(../images/sec2bg2.png);  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;}
+.company h3,.company p {color: #fff; font-weight: bold;}
+.company img{position: relative; margin-bottom: 20px;}
+.company h3{position: absolute; top: 40%; left: 50%; transform: translateX(-50%);}
+.company p {font-size: 18px; line-height: 22px;}
+
+
+
+.page3{background: url(../images/sec3bg.jpg);   background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;}
+
+.consL.swiper-slide {background: #fff; height: 300px; width: 300px !important;}

@@ -8,10 +8,11 @@ $(document).ready(function(){
   //
   // })
 
-  const swiper = new Swiper('.swiper-container', {
+  const swiper = new Swiper('.page1 .swiper-container', {
   speed: 400,
-  spaceBetween: 100,
+  spaceBetween: 10,
   loop:true,
+  autoplay: true,
 
 
 });
@@ -26,6 +27,17 @@ $(window).resize(function(){
          }
 
          sHeight();
+
+
+
+         const swiper2 = new Swiper('.page3 .swiper-container', {
+         speed: 400,
+         spaceBetween: 50,
+         loop:true,
+         autoplay: true,
+
+
+       });
 
 
 
