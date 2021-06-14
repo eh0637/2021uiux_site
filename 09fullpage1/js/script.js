@@ -10,7 +10,7 @@ $(document).ready(function(){
 
   const swiper = new Swiper('.page1 .swiper-container', {
   speed: 400,
-  spaceBetween: 10,
+  spaceBetween: 0,
   loop:true,
   autoplay: true,
 
@@ -30,14 +30,14 @@ $(window).resize(function(){
 
 
 
-         const swiper2 = new Swiper('.page3 .swiper-container', {
-         speed: 400,
-         spaceBetween: 50,
-         loop:true,
-         autoplay: true,
+         new Swiper('.page3 .swiper-container', {
+           speed: 400,
+           spaceBetween: 30,
+           loop:true,
+           autoplay: true,
+           slidesPerView: 3,
+           });
 
-
-       });
 
 
 
