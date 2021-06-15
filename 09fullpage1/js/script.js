@@ -3,6 +3,16 @@ $(document).ready(function(){
     menu:".topMenu",
     anchors:['m1st','m2st','m3st','m4st'],
 
+
+    afterLoad:function(anchorslink,index){
+          console.log(anchorslink + ',' + index);
+          if( index == 2){
+              $(".company").addClass("down")
+          }else{
+              $(".company").removeClass("down")
+          }
+      }
+
   })
   // $(".slider").bxSlider({
   //
@@ -37,6 +47,9 @@ $(window).resize(function(){
            autoplay: true,
            slidesPerView: 3,
            });
+
+
+
 
 
 

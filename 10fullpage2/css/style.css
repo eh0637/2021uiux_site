@@ -1,0 +1,68 @@
+@charset "UTF-8";
+body{height: 100%;}
+
+.navTop{position: fixed; z-index: 1; background: #fff; width: 100%;}
+.navTop li{ display: inline-block; padding: 10px;}
+.navbar {background: none; padding: 10px 50px;}
+
+.page1{
+  background: url(../images/se1ng.png);
+  background-repeat: no-repeat;  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.page2{
+  background: url(../images/se2bg.png);
+  background-repeat: no-repeat;  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+
+.mainAniT img,
+.mainAniB img
+{ animation-name: mainA; animation-duration: 2s;  }
+.mainAniT  {animation-name: mainAleft; animation-duration: 2s; position: absolute;
+top: 25%; left: 28%;  }
+.mainAniB {animation-name: mainAright; animation-duration: 2s; position: absolute;
+  right: 27%;
+
+      bottom: 15%; }
+
+@keyframes mainA {100% { transform: rotate(360deg); }}
+
+
+
+@keyframes mainAleft {
+  from{left: 0; }
+    to{left: 28%;}
+  }
+  @keyframes mainAright {
+    from{right: 0;}
+      to{right: 27%;}
+    }
+
+    .mainAniT p,
+    .mainAniB p{
+      color: #351D06; font-size: 24px; animation-name: opacity0;
+     animation-duration: 3s;
+   }
+   @keyframes opacity0 {
+     from{opacity:  0;}
+       to{opacity:  1;}
+     }
+
+
+
+/* 2 */
+.se2ProI .se2ProIT{
+  position: absolute; left: 50%; transform: translateX(-50%);
+
+}
+.se2ProI .se2ProIB{
+  position: absolute; left: 50%; transform: translateX(-50%);
+
+}
+.se2ProI {position: relative; position: absolute; left: 50%; transform: translateX(-50%); top: 25%;}
+.se2ProI h2{}
+  .card{background: #ddd; height: 40px;}
