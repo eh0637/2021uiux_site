@@ -15,6 +15,13 @@ $(document).ready(function(){
               $(".company2").removeClass("down");
               $(".company3").removeClass("down");
           }
+          if( index == 3){
+              $(".contSlider ").addClass("right");
+  ;
+          }else{
+              $(".contSlider ").removeClass("right");
+
+          }
       }
 
   })
@@ -46,13 +53,13 @@ $(window).resize(function(){
 
          new Swiper('.page3 .swiper-container', {
            speed: 400,
-           // spaceBetween: 15,
+           spaceBetween: 15,
            loop:true,
-           autoplay: false,
+           autoplay: true,
            slidesPerView: 3,
            navigation : {
-              nextEl : '.swiper-button-next', // 다음 버튼 클래스명
-              prevEl : '.swiper-button-prev', // 이번 버튼 클래스명
+              nextEl : '.swiper-next', // 다음 버튼 클래스명
+              prevEl : '.swiper-prev', // 이번 버튼 클래스명
             },
 
            });

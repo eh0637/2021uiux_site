@@ -17,6 +17,12 @@ body, html{height: 100%;}
   -webkit-background-size: cover;
   background-size: cover;
 }
+.page3{
+  background: url(../images/sec3bg.jpg);
+  background-repeat: no-repeat;  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
 
 
 .mainAniT img,
