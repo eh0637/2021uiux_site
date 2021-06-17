@@ -7,9 +7,9 @@ $(document).ready(function(){
     afterLoad:function(anchorslink,index){
           console.log(anchorslink + ',' + index);
           if( index == 2){
-              $(".company").addClass("down")
+              $(".se2ProIB").addClass("aniM2")
           }else{
-              $(".company").removeClass("down")
+              $(".se2ProIB").removeClass("aniM2")
           }
       }
 
