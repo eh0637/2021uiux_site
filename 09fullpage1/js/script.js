@@ -7,9 +7,13 @@ $(document).ready(function(){
     afterLoad:function(anchorslink,index){
           console.log(anchorslink + ',' + index);
           if( index == 2){
-              $(".company").addClass("down")
+              $(".company1").addClass("down");
+              $(".company2").addClass("down");
+              $(".company3").addClass("down");
           }else{
-              $(".company").removeClass("down")
+              $(".company1").removeClass("down");
+              $(".company2").removeClass("down");
+              $(".company3").removeClass("down");
           }
       }
 
@@ -42,10 +46,15 @@ $(window).resize(function(){
 
          new Swiper('.page3 .swiper-container', {
            speed: 400,
-           spaceBetween: 30,
+           // spaceBetween: 15,
            loop:true,
-           autoplay: true,
+           autoplay: false,
            slidesPerView: 3,
+           navigation : {
+              nextEl : '.swiper-button-next', // 다음 버튼 클래스명
+              prevEl : '.swiper-button-prev', // 이번 버튼 클래스명
+            },
+
            });
 
 

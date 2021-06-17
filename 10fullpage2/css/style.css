@@ -1,5 +1,5 @@
 @charset "UTF-8";
-body{height: 100%;}
+body, html{height: 100%;}
 
 .navTop{position: fixed; z-index: 1; background: #fff; width: 100%;}
 .navTop li{ display: inline-block; padding: 10px;}

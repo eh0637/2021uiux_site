@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
   <script src="js/jquery-3.1.1.min.js"></script>
   <script src="js/jquery.fullPage.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
@@ -54,19 +56,26 @@
         <ul class="slider swiper-wrapper">
           <li class="s1st swiper-slide">
             <div class="text">
-              <h2>Lorem ipsum dolor sit.</h2>
+              <svg width=700 height=120 viewBox="0 -100 700 120">
+                <text> Lorem ipsum</text>
+              </svg>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Natus, delectus.</p>
+
             </div>
           </li>
           <li class="s2st swiper-slide">
             <div class="text">
-              <h2>Lorem ipsum dolor sit.</h2>
+              <svg class="coloA" width=700 height=120 viewBox="0 -100 700 120">
+                <text> Lorem ipsum</text>
+              </svg>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Natus, delectus.</p>
             </div>
           </li>
           <li class="s3st swiper-slide">
             <div class="text">
-              <h2>Lorem ipsum dolor sit.</h2>
+              <svg width=700 height=120 viewBox="0 -100 700 120">
+                <text> Lorem ipsum</text>
+              </svg>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Natus, delectus.</p>
             </div>
           </li>
@@ -80,18 +89,18 @@
       <div class="container ">
         <h2 class="text-center">COMPANY</h2>
         <div class="row">
-          <div class="col-4 company ">
+          <div class="col-4 company1 company">
             <img src="images/sec2con12.gif" alt="" class="img-fluid">
             <h3 class="text-center">Technology</h3>
             <p class="text-center">백신 분야의 연구를 진행하고 있습니다.</p>
           </div>
-          <div class="col-4 company ">
+          <div class="col-4 company2 company">
             <img src="images/sec2con22.gif" alt=""  class="img-fluid">
             <h3 class="text-center">Manufacturing</h3>
             <p class="text-center">첨담 기술력이 보유된 <br>
 백신 공장을 보유하고 있습니다.</p>
           </div>
-          <div class="col-4 company">
+          <div class="col-4 company3 company">
             <img src="images/sec2con33.gif" alt=""  class="img-fluid">
             <h3 class="text-center">Global Besiness</h3>
             <p class="text-center">글로벌 기업들과의 협력을 통해<br>
@@ -103,53 +112,75 @@
 
     </div>
     <div class="section page3" data-anchor="m1s3">
-      <!-- <div class="container"> -->
-        <h2>NEWS &#38; STORIES </h2>
-        <p>EDH COMPANY 소식을 안내 합니다다.</p>
-        <button><a href="#">MORE</a></button>
-        <div class="contSlider  swiper-container">
-          <div class="slider2 swiper-wrapper">
-            <div class="consL swiper-slide ">
-              <h4>NEWS</h4>
-              <p class="stitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-              <p class="cotn">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit debitis enim ea reprehenderit </p>
-              <p class="date">2021-06-14</p>
-              <div class="bar"></div>
+      <div class="container">
 
+          <div class="row">
+
+            <div class="col-3 newtitle">
+              <h2 class="mb-3">NEWS &#38; STORIES </h2>
+              <h4 class="mb-3">COMPANY 소식을<br> 안내 합니다.</h4>
+              <button><a href="">MORE</a></button>
+              <div class="swiper-button-prev "></div>
+              <div class="swiper-button-next "></div>
+            </div>
+            <div class="col-9 py-0">
+            <div class="contSlider  swiper-container">
+              <div class="slider2 swiper-wrapper">
+                <div class="consL swiper-slide ">
+                  <div class="swffbg">
+                  <h4>NEWS</h4>
+                  <p class="stitle">Lorem ipsum dolor sit amet,</p>
+                  <p class="cotn">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit debitis enim </p>
+                  <p class="date">2021-06-14</p>
+                  <div class="bar"></div>
+                  </div>
+
+
+                </div>
+
+              <div class="consL swiper-slide ">
+                <div class="swffbg">
+                <h4>NEWS</h4>
+                <p class="stitle">Lorem ipsum dolor sit amet,</p>
+                <p class="cotn">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit debitis enim </p>
+                <p class="date">2021-06-14</p>
+                <div class="bar"></div>
+                </div>
+
+
+
+              </div>
+              <div class="consL swiper-slide ">
+                <div class="swffbg">
+                <h4>NEWS</h4>
+                <p class="stitle">Lorem ipsum dolor sit amet,</p>
+                <p class="cotn">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit debitis enim </p>
+                <p class="date">2021-06-14</p>
+                <div class="bar"></div>
+                </div>
+
+              </div>
+              <div class="consL swiper-slide ">
+                <div class="swffbg">
+                <h4>NEWS</h4>
+                <p class="stitle">Lorem ipsum dolor sit amet,</p>
+                <p class="cotn">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit debitis enim </p>
+                <p class="date">2021-06-14</p>
+                <div class="bar"></div>
+                </div>
+
+              </div>
 
             </div>
-            <div class="consL swiper-slide ">
-              <h4>NEWS</h4>
-              <p class="stitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-              <p class="cotn">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit debitis enim ea reprehenderit </p>
-              <p class="date">2021-06-14</p>
-              <div class="bar"></div>
 
-
-
+              </div>
             </div>
-            <div class="consL swiper-slide ">
-              <h4>NEWS</h4>
-              <p class="stitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-              <p class="cotn">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit debitis enim ea reprehenderit </p>
-              <p class="date">2021-06-14</p>
-              <div class="bar"></div>
-
-            </div>
-            <div class="consL swiper-slide ">
-              <h4>NEWS</h4>
-              <p class="stitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-              <p class="cotn">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit debitis enim ea reprehenderit </p>
-              <p class="date">2021-06-14</p>
-              <div class="bar"></div>
-
-            </div>
-
+            <!-- 스와이퍼슬라이더 -->
           </div>
 
-        </div>
 
-      <!-- </div> -->
+      </div>
+      <!-- container -->
     </div>
     <div class="section page4" data-anchor="m1s4">4</div>
   </div>
