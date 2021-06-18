@@ -103,13 +103,17 @@ ul.slider {margin: 0;}
 
 .page3 h2{ font-weight: bold; font-size: 40px;color: #333;}
 
-/* .bar { height: 400px; width: 30px;  background: #135680; position: absolute; top: 0; right: 0;  } */
-.swiper-slide {transition: 0.5s;}
+
+.swiper-slide {padding: 20px 0;}
+.swiper-slide .date{ display: none; transition: 0.5s;}
+.swiper-slide .cotn{ display: none; transition: 0.5s;}
+.swiper-slide-active .date{ display: block; transition: 0.5s;}
+.swiper-slide-active .cotn{ display: block; transition: 0.5s;}
 .swiper-slide-active {transition: 0.5s;}
 
 
 
-/*  */
+/*  svg*/
 
 svg text {
   font-size: 6em; fill:none;  font-weight: 800; stroke:#fff;
@@ -136,42 +140,54 @@ svg{margin-bottom: 24px;}
 } */
 
 
+.page3 h2 {
+  text-align: center;
+}
+/*  슬라이드 내용*/
+.contSlider  {padding: 5px;}
+.swffbg{
+  background: #fff; padding: 30px; border-right:20px solid #135680;
+  box-shadow: 5px 5px 8px rgba(0,0,0,0.3)
+}
+
 .newtitle{
-  /* padding: 50px; */
-    /* position: absolute; */
-    /* left: 10%; */
-    /* top: 50%; */
-    /* transform: translateY(-50%); */
+
   }
-.newtitle h4 { font-weight: bold; letter-spacing: -2px; font-size: 1.5rem;_margin-bottom: 120px; color: #333; text-align: center;}
-.newtitle button {background: #000; padding: 10px 60px; border: none; }
+
+.newtitle h4 { font-weight: bold; letter-spacing: -2px; font-size: 1.5rem;color: #333; margin-bottom: 80px; }
+.newtitle button {background: #333; padding: 10px 60px; border: none; }
 .newtitle button a {color: #fff;   text-align: center; display: block;}
 
 
 
-/* .swiper-button-next, .swiper-button-prev {
-    position: absolute;
-    top: 80%;
-    width: calc(var(--swiper-navigation-size)/ 44 * 27);
-    height: var(--swiper-navigation-size);
-    margin-top: calc(0px - (var(--swiper-navigation-size)/ 2));
-    z-index: 10;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #333;
-  } */
-  /* .swiper-button-next {left: 140px;}
-  .swiper-button-prev{left: 0;} */
 .swiper-prev img,.swiper-next img {width: 30px;}
 .swiper-prev{ margin-right: 5px;}
 .swiper-prev,.swiper-next {float: left; background: #ccc;}
 .swiper-prev img{ transform: rotate(180deg);}
-.buttonWrap {    display: flex;
+.moreWrap {    display: flex;
     justify-content: center;
     align-items: center;}
 
-    .moreWrap{display: flex;
-    justify-content: center;
-    align-items: center; margin-bottom: 10px;}
+
+
+
+    /* page4 */
+
+
+.page4{background: url(../images/sec4bg.png);   background-position:center;
+      background-repeat: no-repeat;
+      background-size: cover; position: relative;}
+  .page4 h2 {font-weight: bold;font-size: 60px; color: #333; }
+  .page4 p {font-weight: bold;}
+.more4{font-weight: bold;}
+  .more4::before{
+    content: ""; display: block; width: 50px; height: 2px; background: #135680;
+    margin: 10px 0;
+}
+
+
+
+/* 풀페이지 설정 */
+#fp-nav ul li a span, .fp-slidesNav ul li a span{background: #fff !important;}
+#fp-nav {right: 0;}
+#fp-nav ul li .fp-tooltip {right: 30px; text-shadow: 5px 5px 8px rgba(0,0,0,0.5)}

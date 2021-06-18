@@ -2,8 +2,10 @@ $(document).ready(function(){
   $("#fullPage").fullpage({
     menu:".topMenu",
     anchors:['m1st','m2st','m3st','m4st'],
-
-
+    navigation:true,
+    navigationTooltips:['HOME','COMPANY','NEWS','JOINUS',],
+    showActiveTooltips:true,
+    responsiveWidth: 1000,
     afterLoad:function(anchorslink,index){
           console.log(anchorslink + ',' + index);
           if( index == 2){

@@ -26,25 +26,63 @@ body, html{height: 100%;}
 }
 
 
-.mainAniT img,
-.mainAniB img
-{ animation-name: mainA; animation-duration: 2s;  }
-.mainAniT  {animation-name: mainAleft; animation-duration: 2s; position: absolute;
-top: 25%; left: 28%;  }
-.mainAniB {animation-name: mainAright; animation-duration: 2s; position: absolute;
-  right: 27%;
+.aniWrap img.mainA{animation-name: mainA;}
+.aniWrap img{
+   animation-duration: 2s;
 
-      bottom: 15%; }
-
-@keyframes mainA {100% { transform: rotate(360deg); }}
+}
 
 
+.aniWrapb img.mainA{animation-name: mainA;}
+.aniWrapb img{
+   animation-duration: 2s;
+
+}
+
+@keyframes mainA {
+    0%{transform: rotate(0deg);}
+    100% { transform: rotate(360deg); }
+
+}
+
+
+
+
+.mainAniT  {
+  animation-name: mainAleft; animation-duration: 2s;
+   position: absolute; transition: 2s; opacity: 0;
+top: 25%; left: 0;  z-index: 100;}
+.mainAniB {
+  animation-name: mainAright; animation-duration: 2s;
+  position: absolute; transition: 2s; opacity: 0;
+  right: 0; bottom: 15%; z-index: 100 ; }
+
+
+.shd1{
+  position: absolute;
+    left: 30%;
+    top: 36%;  animation-name:shd; animation-duration: 2.2s;
+  }
+  @keyframes shd {
+    0%{opacity:0 }
+    60%{opacity: 0}
+      100%{opacity: 1}
+
+  }
+  .shd2{
+    position: absolute;
+        right: 32%;
+        bottom: 16%;
+         animation-name:shd; animation-duration: 2.2s;
+    }
+.mainAniT.mainAleft{left: 28%; opacity: 1;}
+.mainAniB.mainAright{right: 27%; opacity: 1;}
 
 @keyframes mainAleft {
   from{left: 0; }
     to{left: 28%;}
   }
-  @keyframes mainAright {
+ @keyframes mainAright {
     from{right: 0;}
       to{right: 27%;}
     }
@@ -64,9 +102,35 @@ top: 25%; left: 28%;  }
 /* 2 */
 
   .card{background: #ddd; height: 40px;}
-  .se2ProIT {z-index: 100;}
+  .amiM3.aniM4{left: 70%;}
+  .se2ProIT.aniM1{ transform: rotate(0deg) ; }
+  /* .se2ProIT{z-index: 100; transform: rotate(189deg); } */
+
   .se2ProIB.aniM2{ left: 100%; transform: translateX(-50%); transform: rotate(0);
-  opacity: 1;}
-  .se2ProIB{position: absolute; bottom: 20px; left: 77%; transform: translateX(-50%); transform: rotate(359deg); transition: 0.8s; opacity: 0;}
-  .se2ProIT{position: absolute; bottom: 20px; left: 100%; transform: translateX(-50%);}
-.se2ProIT.aniM3{left: 90%; transform: translateX(-50%);}
+  opacity: 1; }
+  .se2ProIB{
+
+    position: absolute; bottom: 20px; left: 85%; transform: translateX(-50%); transform: _rotate(40deg); transition: 0.9s; opacity: 0; transition-delay: 2s; z-index: 1;
+  }
+  .se2ProIT{
+    /* position: absolute; bottom: 20px; left: 75%;  */
+    _transform: translateX(-50%);
+    z-index: 100; transform: rotate(359deg); transition: 0.8s;
+  }
+  .amiM3{ transition-delay: 1s; transition: 0.8s; opacity: 1;
+    transform: scale(1.1); position: absolute; bottom: 20px; left: 75%; z-index: 100;}
+
+    .amiM3.ani0{animation-name: ani0; animation-duration: 1s}
+    @keyframes ani0 {
+      from{left: 0%; transform: rotate(360deg) opacity: 0;}
+      to{left: 75%;transform: rotate(0deg) opacity: 1;}
+    }
+
+
+
+
+    /* 3 */
+    .page3 .p3c{
+      width: 300px;
+      position: absolute; left: 50%; transform: translate(-50%); top: 18%;
+    }
