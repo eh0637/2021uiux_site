@@ -61,19 +61,22 @@ top: 25%; left: 0;  z-index: 100;}
 .shd1{
   position: absolute;
     left: 30%;
-    top: 36%;  animation-name:shd; animation-duration: 2.2s;
+    top: 36%;
   }
+  .shd1.sdh0,
+  .shd2.sdh0
+  { animation-name:shd; animation-duration: 2.2s;}
   @keyframes shd {
     0%{opacity:0 }
     60%{opacity: 0}
-      100%{opacity: 1}
+    100%{opacity: 1}
 
   }
   .shd2{
     position: absolute;
         right: 32%;
         bottom: 16%;
-         animation-name:shd; animation-duration: 2.2s;
+         /* animation-name:shd; animation-duration: 2.2s; */
     }
 .mainAniT.mainAleft{left: 28%; opacity: 1;}
 .mainAniB.mainAright{right: 27%; opacity: 1;}
@@ -96,41 +99,68 @@ top: 25%; left: 0;  z-index: 100;}
      from{opacity:  0;}
        to{opacity:  1;}
      }
-
+.aniWrap:hover{transform: scale(1.2);}
+.aniWrapb:hover{transform: scale(1.2);}
+.aniWrap,.aniWrapb{transform: scale(1); transition: 0.3s}
 
 
 /* 2 */
 
-  .card{background: #ddd; height: 40px;}
-  .amiM3.aniM4{left: 70%;}
-  .se2ProIT.aniM1{ transform: rotate(0deg) ; }
-  /* .se2ProIT{z-index: 100; transform: rotate(189deg); } */
+.an1{position: absolute; left: 100%; bottom: 25px; transform: translateX(-50%);z-index: 100; }
+.an1.an1M{animation-name: an1M; animation-duration: 2s}
+@keyframes an1M {
+0%{left: 0; opacity: 0;}
+100%{left: 100%; opacity: 1;}
+}
 
-  .se2ProIB.aniM2{ left: 100%; transform: translateX(-50%); transform: rotate(0);
-  opacity: 1; }
-  .se2ProIB{
+.an2.an2M{animation-name: an2M; animation-duration: 2s; transform: scale(1); }
+@keyframes an2M {
+  0%{transform: rotate(0deg)}
+100%{transform: rotate(360deg);}
+}
+.an25.an25M {
+  animation-name: an25M; animation-duration: 1s;
+  animation-delay: 2s;
+  transform: scale(1.1);
+}
+@keyframes an25M {
+0%{transform: rotate(0) scale(1);}
+100%{transform: rotate(-360deg) scale(1.2);}
+}
 
-    position: absolute; bottom: 20px; left: 85%; transform: translateX(-50%); transform: _rotate(40deg); transition: 0.9s; opacity: 0; transition-delay: 2s; z-index: 1;
-  }
-  .se2ProIT{
-    /* position: absolute; bottom: 20px; left: 75%;  */
-    _transform: translateX(-50%);
-    z-index: 100; transform: rotate(359deg); transition: 0.8s;
-  }
-  .amiM3{ transition-delay: 1s; transition: 0.8s; opacity: 1;
-    transform: scale(1.1); position: absolute; bottom: 20px; left: 75%; z-index: 100;}
+.an3{
+  position: absolute; left: 120%; bottom: 25px; transform: translateX(-50%);
 
-    .amiM3.ani0{animation-name: ani0; animation-duration: 1s}
-    @keyframes ani0 {
-      from{left: 0%; transform: rotate(360deg) opacity: 0;}
-      to{left: 75%;transform: rotate(0deg) opacity: 1;}
-    }
+}
+.an3.an3M{animation-name: an3M; animation-duration: 3.5s; }
+@keyframes an3M {
+0%{left: 100%; opacity: 0;}
+98%{left: 100%; opacity: 0;}
+100%{left: 120%; opacity: 1;}
+}
+.text2Wrap.text2{animation: text2 ; animation-duration: 3.7s;}
+@keyframes text2 {
+0%{transform: translateY(-50px);opacity: 0;}
+96%{transform: translateY(-50px);opacity: 0;}
+100%{transform: translateY(0); opacity: 1;}
+}
+.cdWrap{opacity: 0; transition: 0.3s; transform:translateY(1000px);}
+.cd{ cursor: pointer; transform: scale(1); float: left;
+transition: 0.3s}
+.cdWrap.cardM {opacity: 1; transform:translateY(0);  transition: 0.3s}
 
+.cd img{width: 130px; margin: 20px auto;}
+.cd .cardT h3{font-weight: bold; font-size: 1.5rem;}
+.cd:hover{transform: scale(1.2);}
 
-
-
-    /* 3 */
+/* 3 */
     .page3 .p3c{
       width: 300px;
-      position: absolute; left: 50%; transform: translate(-50%); top: 18%;
+      position: absolute; left: 50%; transform: translate(-50%); top: 18%; opacity: 0
+
+    }
+    .p3c.pc3m{animation-name: pc3M; animation-duration: 0.8s; opacity: 1; }
+    @keyframes pc3M {
+      0%{top: 0; opacity: 0;}
+      100%{top: 18%; opacity: 1;}
     }

@@ -11,6 +11,8 @@ $(document).ready(function(){
             $(".aniWrapb img").addClass("mainA");
             $(".mainAniT").addClass("mainAleft");
             $(".mainAniB").addClass("mainAright");
+            $(".shd1").addClass("sdh0");
+            $(".shd2").addClass("sdh0");
 
 
           }else{
@@ -18,20 +20,33 @@ $(document).ready(function(){
             $(".mainAniB").removeClass("mainAright");
             $(".aniWrap img").removeClass("mainA");
             $(".aniWrapb img").removeClass("mainA");
+            $(".shd1").removeClass("sdh0");
+            $(".shd2").removeClass("sdh0");
 
 
           }
           if( index == 2){
-              $(".se2ProIB").addClass("aniM2");
-              $(".se2ProIT").addClass("aniM1");
-              $(".amiM3").addClass("aniM4");
-              $(".amiM3").addClass("ani0");
+            $(".an1").addClass("an1M");
+            $(".an2").addClass("an2M");
+            $(".an25").addClass("an25M");
+            $(".an3").addClass("an3M");
+            $(".text2Wrap").addClass("text2");
+            $(".cdWrap").addClass("cardM");
+
 
           }else{
-              $(".se2ProIB").removeClass("aniM2")
-              $(".se2ProIT").removeClass("aniM1")
-              $(".amiM3").removeClass("aniM4")
-              // $(".amiM3").removeClass("ani0");
+            $(".an1").removeClass("an1M");
+            $(".an2").removeClass("an2M");
+            $(".an25").removeClass("an25M");
+            $(".an3").removeClass("an3M");
+            $(".text2Wrap").removeClass("text2");
+            $(".cdWrap").removeClass("cardM");
+
+          }
+          if( index == 3){
+            $(".p3c").addClass("pc3m")
+          }else {
+            $(".p3c").removeClass("pc3m")
           }
       }
 
