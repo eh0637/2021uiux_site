@@ -6,3 +6,5 @@
 1. chavy https://eh0637.github.io/2021uiux_site/06chavy
 1. 05/22 https://eh0637.github.io/2021uiux_site/070522
 1. bootstrap https://eh0637.github.io/2021uiux_site/08bootstrap
+1. fullpage1 https://eh0637.github.io/2021uiux_site/09fullpage1
+1. fullpage2 https://eh0637.github.io/2021uiux_site/10fullpage2
