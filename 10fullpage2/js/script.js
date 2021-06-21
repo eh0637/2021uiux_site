@@ -2,6 +2,10 @@ $(document).ready(function(){
   $("#fullPage").fullpage({
     menu:".topMenu",
     anchors:['m1st','m2st','m3st','m4st'],
+    navigation:true,
+    // navigationTooltips:['HOME','마스크워시오프','슈가스크럽','잘버렸습니다',],
+    showActiveTooltips:true,
+    responsiveWidth: 1000,
 
 
     afterLoad:function(anchorslink,index){
@@ -45,14 +49,26 @@ $(document).ready(function(){
           }
           if( index == 3){
             $(".p3c").addClass("pc3m")
+            $(".textWrap2").addClass("textWrap2M")
           }else {
             $(".p3c").removeClass("pc3m")
+            $(".textWrap2").removeClass("textWrap2M")
           }
       }
 
 
 
+
+
   });
+  $(".list li").click(function(){
+    $(".pop").show()
+
+  });
+  $(".bg000").click(function(){
+    $(".pop").hide()
+
+      });
 
 
 

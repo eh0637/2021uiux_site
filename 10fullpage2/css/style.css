@@ -1,10 +1,11 @@
 @charset "UTF-8";
-body, html{height: 100%;}
+body, html{height: 100%; }
+h2,h3,h1,h4,p,a,div{color: #333;}
 
 .navTop{position: fixed; z-index: 1; background: #fff; width: 100%;}
 .navTop li{ display: inline-block; padding: 10px;}
 .navbar {background: none; padding: 10px 50px;}
-
+.navbar-nav li a{font-weight: bold;}
 .page1{
   background: url(../images/se1ng.png);
   background-repeat: no-repeat;  background-position: center;
@@ -102,6 +103,13 @@ top: 25%; left: 0;  z-index: 100;}
 .aniWrap:hover{transform: scale(1.2);}
 .aniWrapb:hover{transform: scale(1.2);}
 .aniWrap,.aniWrapb{transform: scale(1); transition: 0.3s}
+.aniWrap a,.aniWrapb a{display: block;}
+
+.boxsd{
+  position: absolute; z-index: -1;
+  width: 243px;height: 243px; border-radius: 50%; box-shadow:10px 20px 30px rgba(0,0,0,0.5);
+  top: 10px; left: 9px;
+}
 
 
 /* 2 */
@@ -153,14 +161,76 @@ transition: 0.3s}
 .cd .cardT h3{font-weight: bold; font-size: 1.5rem;}
 .cd:hover{transform: scale(1.2);}
 
+.text2Wrap h2,.text2Wrap h3,.text2Wrap p{font-weight: bold;}
+/* .text2Wrap h2{letter-spacing: -2px} */
+.text2Wrap h3{font-size: 1.4rem;}
 /* 3 */
     .page3 .p3c{
       width: 300px;
-      position: absolute; left: 50%; transform: translate(-50%); top: 18%; opacity: 0
+      position: absolute; left: 50%; transform: translateX(-50%); top: 18%; opacity: 0
 
     }
-    .p3c.pc3m{animation-name: pc3M; animation-duration: 0.8s; opacity: 1; }
+    .p3c.pc3m{animation-name: pc3M; animation-duration: 0.8s; opacity: 1; cursor: pointer;
+      _transform: scale(1); transition: 0.3s;}
     @keyframes pc3M {
       0%{top: 0; opacity: 0;}
       100%{top: 18%; opacity: 1;}
     }
+
+    .p3c:hover{animation:p3sH 2s infinite; _transition: 0.3s; transform: scale(1.1); transform: translateX(-50%);}
+    @keyframes p3sH {
+      0%{top: 18%; }
+      50%{top: 24%; }
+      100%{top: 18%; }
+    }
+.textWrap2 {transform: translateX(-1000px); opacity: 0; transition: 0.3s; transition-delay: 0.8s; margin-bottom: 40px; }
+.textWrap2.textWrap2M{transform: translateX(0); opacity: 1; }
+.textWrap2 h2,.textWrap2 h3,.textWrap2 p{font-weight: bold;}
+.textWrap2 h3{font-size: 1.4rem;}
+/* 4 */
+.page4 ul.list li{float: left;  transition: 0.3s;}
+.page4 ul.list li:hover {background: #fff; opacity: 0.5}
+.eventC span {
+  border: 1px solid #333; border-radius: 20px; margin-right: 20px; width: 108px; display: inline-block;
+  font-weight: bold; text-align: center;
+}
+.eventC div{font-weight: bold;}
+.page4 h2 {font-size: 3rem;}
+
+
+/* pop */
+.pop{display: none;}
+.bg000{background: rgba(0,0,0,0.6); height: 100%; width: 100%; position: absolute; top: 0; left: 0; }
+.bgfff{
+  width: 50%; height: 50%; background: #fff; position: absolute; left: 50%; top: 50%;
+  transform: translate(-50%,-50%);
+}
+.bgfff img{ height: 100%;}
+.snsbox{position: absolute; top:0; left:50%; width: 50%; height: 100%; padding: 40px;}
+
+
+
+
+/*풀페이지 설정 */
+
+#fp-nav {right: 50px;}
+#fp-nav ul li a span,#fp-nav ul li a.active span, .fp-slidesNav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li:hover a.active span{height: 28px; width: 28px; border-radius:0;}
+#fp-nav ul li, .fp-slidesNav ul li{height: 30px; width: 30px;}
+#fp-nav ul li .fp-tooltip {right: 30px; color: #333; height: 38px;}
+#fp-nav ul li:nth-child(1) a span{background: url(../images/nav0.svg)  no-repeat center; }
+#fp-nav ul li:nth-child(2) a span{background: url(../images/nav1.svg) no-repeat center; height: 32px!important; }
+#fp-nav ul li:nth-child(3) a span{background: url(../images/nav3.svg) no-repeat center; }
+#fp-nav ul li:nth-child(4) a span{background: url(../images/nav4.svg) no-repeat center; }
+#fp-nav ul li .fp-tooltip{top: 50%; }#fp-nav ul li a.active span,
+.fp-slidesNav ul li a.active span,
+#fp-nav ul li:hover a.active span,
+.fp-slidesNav ul li:hover a.active span{
+height: 30px !important; width: 30px!important; border-radius:0;
+    margin: -6px 0 0 -6px;
+
+ }
+
+ #fp-nav ul li a, .fp-slidesNav ul li a{width: 30px; height: 30px;}
+ #fp-nav ul li a span, .fp-slidesNav ul li a span{top: 0; left: 0;}
+ #fp-nav ul li:hover a span,
+.fp-slidesNav ul li:hover a span{width: 30px; height: 30px;}
