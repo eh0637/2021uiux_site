@@ -19,10 +19,12 @@ $(document).ready(function(){
           }
           if( index == 3){
               $(".contSlider ").addClass("right");
-  ;
+              $(".navTop").addClass("border")
+              $(".topMenu a").addClass("c33")
           }else{
               $(".contSlider ").removeClass("right");
-
+              $(".navTop").removeClass("border")
+              $(".topMenu a").removeClass("c33")
           }
       }
 

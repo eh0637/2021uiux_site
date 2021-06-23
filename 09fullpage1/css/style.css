@@ -36,6 +36,11 @@ font-family: 'Noto Sans', sans-serif;
     /* height: 500px; */
 }
 
+.navTop{background: none; }
+.navTop.border{border-bottom: 1px solid #333;}
+.topMenu a {font-weight: bold; color: #fff; }
+.topMenu a.c33{color: #333;}
+.logo { width: 100px;}
 
 .s1st .text,
 .s3st .text
@@ -169,7 +174,8 @@ svg{margin-bottom: 24px;}
     align-items: center;}
 
 
-
+.swiper-slide{padding: 70px 0;}
+.swiper-slide-active{padding: 0 !important;}
 
     /* page4 */
 
