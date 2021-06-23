@@ -225,7 +225,7 @@ transition: 0.3s}
 .fp-slidesNav ul li a.active span,
 #fp-nav ul li:hover a.active span,
 .fp-slidesNav ul li:hover a.active span{
-height: 30px !important; width: 30px!important; border-radius:0;
+height: 30px !important; width: 30px!important; border-radius:15px;
     margin: -6px 0 0 -6px;
 
  }
