@@ -69,6 +69,12 @@ $(document).ready(function(){
     $(".pop").hide()
 
       });
+      $('.youtube').colorbox({
+          iframe:true,
+          innerWidth:700,
+          innerHeight:393.75
+      });
+
 
 
 

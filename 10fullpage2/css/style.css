@@ -187,7 +187,11 @@ transition: 0.3s}
 .textWrap2.textWrap2M{transform: translateX(0); opacity: 1; }
 .textWrap2 h2,.textWrap2 h3,.textWrap2 p{font-weight: bold;}
 .textWrap2 h3{font-size: 1.4rem;}
+
+.youtube img{box-shadow: 10px 20px 10px rgba(0,0,0,0.5);transform: scale(1); transition: 0.3s; transform: translateY(30px);}
+.youtube img:hover{transform: scale(1.1);}
 /* 4 */
+.page4{background: #efefef;}
 .page4 ul.list li{float: left;  transition: 0.3s;}
 .page4 ul.list li:hover {background: #fff; opacity: 0.5}
 .eventC span {
