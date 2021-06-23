@@ -154,7 +154,7 @@ body{font-family: 'Nanum Gothic', sans-serif;}
 .notice .container h2.conts_title:after { content: ""; display: block; height: 2px; width: 111px; background: var(--primary-color-1); margin: 10px 0;}
 
 .notice .card_boxhover img{border-radius: 10px; }
-
+.notice{transition: 0.3s;}
  /* MULTIMEDIA */
  .multimedia {background:  var(--bgcolor1);}
 .multimedia .container h2.conts_title:after { content: ""; display: block; height: 2px; width: 194px; background: var(--primary-color-1); margin: 10px 0;}
