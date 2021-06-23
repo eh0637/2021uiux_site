@@ -192,7 +192,15 @@ svg{margin-bottom: 24px;}
 }
 
 
+.topbtn{width: 100px; height: 100px; border-radius: 50px; border: 5px solid #135680; position: absolute;    left: 10%;
+    bottom: 5%; animation: topbtn 1s infinite;}
+    @keyframes topbtn {
+      0%{bottom: 10%}
+      50%{bottom: 5%}
+        100%{bottom: 10%;}
 
+    }
+.topbtn a{text-align: center; display: block; line-height: 90px; font-weight: bold;}
 /* 풀페이지 설정 */
 #fp-nav ul li a span, .fp-slidesNav ul li a span{background: #fff !important;}
 #fp-nav {right: 0;}
