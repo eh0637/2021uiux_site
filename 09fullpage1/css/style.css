@@ -109,12 +109,15 @@ ul.slider {margin: 0;}
 .page3 h2{ font-weight: bold; font-size: 40px;color: #333;}
 
 
-.swiper-slide {padding: 20px 0;}
-.swiper-slide .date{ display: none; transition: 0.5s;}
+.swiper-slide {_padding: 20px 0;}
+/* .swiper-slide .date{ display: none; transition: 0.5s;} */
 .swiper-slide .cotn{ display: none; transition: 0.5s;}
-.swiper-slide-active .date{ display: block; transition: 0.5s;}
-.swiper-slide-active .cotn{ display: block; transition: 0.5s;}
-.swiper-slide-active {transition: 0.5s;}
+/* .swiper-slide-active .date{ display: block; } */
+.swiper-slide-active .cotn{ display: block;}
+
+
+
+
 
 
 
@@ -151,15 +154,15 @@ svg{margin-bottom: 24px;}
 /*  슬라이드 내용*/
 .contSlider  {padding: 5px;}
 .swffbg{
-  background: #fff; padding: 30px; border-right:20px solid #135680;
-  box-shadow: 5px 5px 8px rgba(0,0,0,0.3)
+  background: #fff; padding: 30px; border-right:40px solid #135680;
+  box-shadow: 5px 5px 8px rgba(0,0,0,0.3);height:300px;border-radius: 10px;overflow: hidden;
 }
-
+.swffbg h4{text-align: center; margin-bottom: 20px}
 .newtitle{
 
   }
 
-.newtitle h4 { font-weight: bold; letter-spacing: -2px; font-size: 1.5rem;color: #333; margin-bottom: 80px; }
+.newtitle h4 { font-weight: bold; letter-spacing: -2px; font-size: 1.5rem;color: #333;text-align: center; margin-bottom: 20px;}
 .newtitle button {background: #333; padding: 10px 60px; border: none; }
 .newtitle button a {color: #fff;   text-align: center; display: block;}
 
@@ -174,8 +177,9 @@ svg{margin-bottom: 24px;}
     align-items: center;}
 
 
-.swiper-slide{padding: 70px 0;}
-.swiper-slide-active{padding: 0 !important;}
+.swiper-slide{padding: 30px 0; transition: 0.3s;}
+.swiper-slide.swiper-slide-active{padding: 10px 0;}
+.swiper-slide.swiper-slide-active .swffbg{padding: 30px !important;height:400px !important}
 
     /* page4 */
 
@@ -205,3 +209,12 @@ svg{margin-bottom: 24px;}
 #fp-nav ul li a span, .fp-slidesNav ul li a span{background: #fff !important;}
 #fp-nav {right: 0;}
 #fp-nav ul li .fp-tooltip {right: 30px; text-shadow: 5px 5px 8px rgba(0,0,0,0.5)}
+.tabMenu li{line-height: 30px; border-bottom: 2px solid rgba(0,0,0,0) ; transition: 0.3s; }
+
+.tabMenu li a {text-align: center; display: block; font-weight: bold; font-size: 1.2rem;}
+.tabMenu li::after{content: "";display: block; width: 100px; height: 2px; background: rgba(0,0,0,0) ; margin: 0 auto; transition: 0.4s;}
+.tabMenu li:hover::after{content: "";display: block; width: 100px; height: 2px; background: #135680; margin: 0 auto;}
+
+.tabMenu li.active2 a{font-weight: bold; color: #135680;}
+.newtitle{padding: 18px 0;}
+.newtitleWrap{background: rgba(255,255,255,0.5); height: 390px; padding: 100px 0; border-radius: 5px}

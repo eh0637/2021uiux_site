@@ -33,11 +33,15 @@ $(document).ready(function(){
   //
   // })
 
+
   const swiper = new Swiper('.page1 .swiper-container', {
   speed: 400,
   spaceBetween: 0,
   loop:true,
   autoplay: true,
+  observer: true,
+  observeParents: true,
+  observeSlideChildren:true,
 
 
 });
@@ -53,6 +57,20 @@ $(window).resize(function(){
 
          sHeight();
 
+         $(".tabC").hide().eq(0).show();
+
+         $(".tabMenu li").click(function(){
+           let t = $(this).index();
+           console.log(t)
+
+
+           $(".tabMenu li").removeClass("active2");
+           $(this).addClass("active2")
+           $(".tabC").hide().eq(t).fadeIn();
+
+
+         });
+
 
 
          new Swiper('.page3 .swiper-container', {
@@ -60,13 +78,29 @@ $(window).resize(function(){
            spaceBetween: 15,
            loop:true,
            autoplay: true,
+           loopFillGroupWithBlank: true,
+           observer: true,
+           observeParents: true,
            slidesPerView: 3,
+           breakpoints:{
+             0:{slidesPerView: 1},
+             720:{slidesPerView: 2},
+             1000:{slidesPerView: 3},
+
+           },
            navigation : {
               nextEl : '.swiper-next', // 다음 버튼 클래스명
               prevEl : '.swiper-prev', // 이번 버튼 클래스명
             },
 
            });
+
+
+
+
+
+
+
 
 
 
