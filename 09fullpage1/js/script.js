@@ -88,10 +88,7 @@ $(window).resize(function(){
              1000:{slidesPerView: 3},
 
            },
-           navigation : {
-              nextEl : '.swiper-next', // 다음 버튼 클래스명
-              prevEl : '.swiper-prev', // 이번 버튼 클래스명
-            },
+
 
            });
 
