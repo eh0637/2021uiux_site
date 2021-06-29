@@ -238,3 +238,14 @@ height: 30px !important; width: 30px!important; border-radius:15px;
  #fp-nav ul li a span, .fp-slidesNav ul li a span{top: 0; left: 0;}
  #fp-nav ul li:hover a span,
 .fp-slidesNav ul li:hover a span{width: 30px; height: 30px;}
+
+
+
+
+
+/* popup sns */
+.snsP {margin-bottom: 20px;}
+.snspImg{width: 50px;float: left; margin-right: 20px;}
+.snsid{float: left; line-height: 50px; margin-right: 50px;}
+.snsM{float: right; line-height: 50px; font-weight: bold;}
+.snst p {line-height: 50px;}
