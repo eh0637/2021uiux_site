@@ -206,11 +206,11 @@ transition: 0.3s}
 .pop{display: none;}
 .bg000{background: rgba(0,0,0,0.6); height: 100%; width: 100%; position: absolute; top: 0; left: 0; }
 .bgfff{
-  width: 50%; height: 50%; background: #fff; position: absolute; left: 50%; top: 50%;
+  width: 800px; height: 400px; background: #fff; position: absolute; left: 50%; top: 50%;
   transform: translate(-50%,-50%);
 }
-.bgfff img{ height: 100%;}
-.snsbox{position: absolute; top:0; left:50%; width: 50%; height: 100%; padding: 40px;}
+.img_bg{height: 400px;}
+.snsbox{position: absolute; top:0; left:50%; width: 50%; height: 100%; }
 
 
 
@@ -244,12 +244,31 @@ height: 30px !important; width: 30px!important; border-radius:15px;
 
 
 /* popup sns */
-.snsP {margin-bottom: 20px;}
+.snsP {margin-bottom: 20px; border-bottom: 1px solid #ccc;
+    width: 400px; padding: 10px;}
 .snspImg{width: 50px;float: left; margin-right: 20px;}
 .snsid{float: left; line-height: 50px; margin-right: 50px;}
 .snsM{float: right; line-height: 50px; font-weight: bold;}
 .snst p {line-height: 50px;}
-.snsB{position: absolute; bottom: 0; left: 0;}
+.snst{padding: 10px;}
+.snsB {position: absolute; bottom: 0; left: 0;     width: 400px;
+
+    border-top: 1px solid #ccc;}
 .far {
     font-size: 25px;
 }
+.snsB p{font-weight: bold;}
+.fa-bookmark{float: right;}
+.fa-smile{float: left; margin-right: 10px;}
+.lef{float: left;}
+.lefO{ float: right; color: #004bff; opacity: 0.5; transition: 0.3s;}
+.lefO:hover{ opacity: 1;}
+.snsbW{border-top: 1px solid #ccc; padding: 10px;}
+.snsTW{padding: 10px;}
+.snsTW p{margin-bottom: 0;}
+.snsTW a + a { margin-left: 10px;}
+.time{font-size: 0.7rem; color: #ccc;}
+.fa-heart:hover{color: #f00;}
+.tag{color: #004bff;}
+.snsid{font-weight: bold; color: #333;}
+.c333  {color: #333;}
