@@ -245,7 +245,8 @@ height: 30px !important; width: 30px!important; border-radius:15px;
 
 /* popup sns */
 .snsP {margin-bottom: 20px; border-bottom: 1px solid #ccc;
-    width: 400px; padding: 10px;}
+    width: 400px; padding: 10px;     border-radius: 4px;
+    overflow: hidden;}
 .snspImg{width: 50px;float: left; margin-right: 20px;}
 .snsid{float: left; line-height: 50px; margin-right: 50px;}
 .snsM{float: right; line-height: 50px; font-weight: bold;}
