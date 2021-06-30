@@ -208,7 +208,7 @@ svg{margin-bottom: 24px;}
 /* 풀페이지 설정 */
 #fp-nav ul li a span, .fp-slidesNav ul li a span{background: #fff !important;}
 #fp-nav {right: 0;}
-#fp-nav ul li .fp-tooltip {right: 30px; text-shadow: 5px 5px 8px rgba(0,0,0,0.5)}
+#fp-nav ul li .fp-tooltip{right: 30px; text-shadow: 5px 5px 8px rgba(0,0,0,0.5);}
 .tabMenu li{line-height: 30px; border-bottom: 2px solid rgba(0,0,0,0) ; transition: 0.3s; }
 
 .tabMenu li a {text-align: center; display: block; font-weight: bold; font-size: 1.2rem;}
@@ -218,3 +218,11 @@ svg{margin-bottom: 24px;}
 .tabMenu li.active2 a{font-weight: bold; color: #135680;}
 .newtitle{padding: 18px 0;}
 .newtitleWrap{background: rgba(255,255,255,0.5); height: 390px; padding: 100px 0; border-radius: 5px}
+
+
+
+#fp-nav ul li:last-child{display: none !important;}
+.fp-slidesNav ul li:last-child {display: none!important;}
+
+
+.footerB{flex-direction: column; align-items: center;}

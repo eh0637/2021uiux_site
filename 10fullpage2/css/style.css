@@ -1,6 +1,6 @@
 @charset "UTF-8";
 body, html{height: 100%; }
-h2,h3,h1,h4,p,a,div{color: #333;}
+/* h2,h3,h1,h4,p,a{color: #333;} */
 
 .navTop{position: fixed; z-index: 1; background: #fff; width: 100%;}
 .navTop li{ display: inline-block; padding: 10px;}
@@ -273,3 +273,9 @@ height: 30px !important; width: 30px!important; border-radius:15px;
 .tag{color: #004bff;}
 .snsid{font-weight: bold; color: #333;}
 .c333  {color: #333;}
+
+
+#fp-nav ul li:last-child{display: none !important;}
+.fp-slidesNav ul li:last-child {display: none!important;}
+
+.footerB{flex-direction: column; align-items: center; color: #fff !important;}

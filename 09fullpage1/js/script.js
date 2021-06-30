@@ -1,9 +1,9 @@
 $(document).ready(function(){
   $("#fullPage").fullpage({
     menu:".topMenu",
-    anchors:['m1st','m2st','m3st','m4st'],
+    anchors:['m1st','m2st','m3st','m4st' ,'m5st'],
     navigation:true,
-    navigationTooltips:['HOME','COMPANY','NEWS','JOINUS',],
+    navigationTooltips:['m1st','m2st','m3st','m4st','footer'],
     showActiveTooltips:true,
     responsiveWidth: 1000,
     afterLoad:function(anchorslink,index){
