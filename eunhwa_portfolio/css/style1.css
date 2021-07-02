@@ -15,4 +15,16 @@
 
 .swiper-slide img {width: 50%;}
 .sliderText h3 {font-weight: bold;}
-.sliderText a{text-decoration: none;}
+.sliderText a{text-decoration: none; display: block;}
+.skillIcon {padding: 20px 0; display: flex; justify-content: center;}
+.skillIcon li{ list-style: none; float: left;}
+.skillIcon li + li {margin-left: 14px;}
+.clearfix::after{content: "";display: block; clear: both;}
+.skillIcon li a{font-size: 50px; color: #495057 !important; display: block;}
+#awards a {text-decoration: none; color: #333; }
+.pdflink{font-weight: bold;color: #495057; display: block; line-height: 50px; transition: 0.3s;}
+.pdflink:hover{color: #3880bd !important;}
+#awards h3{float: left; margin-right: 50px;}
+.emailP a{transition: 0.3s;}
+.emailP a:hover {color: #3880bd !important; display: block;}
+.swiper-slide a {font-weight: bold;}
