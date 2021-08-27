@@ -34,7 +34,7 @@ $(document).ready(function(){
   // })
 
 
-  const swiper = new Swiper('.page1 .swiper-container', {
+  const swiper = new Swiper('.page1 .swiper', {
   speed: 400,
   spaceBetween: 0,
   loop:true,
@@ -73,7 +73,7 @@ $(window).resize(function(){
 
 
 
-         new Swiper('.page3 .swiper-container', {
+         new Swiper('.page3 .swiper', {
            speed: 400,
            spaceBetween: 15,
            loop:true,
